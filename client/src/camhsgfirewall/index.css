@@ -1,0 +1,3365 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 80px;
+}
+
+#cam_menu{
+  margin-left: 80px;
+  margin-right: -75px;
+  cursor: pointer;
+}
+
+#cam_live{
+  width: 80px;
+  height: 60px;
+  margin-left: 20px;
+}
+/* Titles */
+#cam_tiei1 {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+#cam_tiei2 {
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+#cam_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-top: -10px;
+}
+
+
+/* Dashboard Table */
+#cam_dashboard-table {
+  margin-top: -36px;
+  width: 90%;
+  margin-left: 80px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0px;
+  display: flex;
+}
+
+/* Font sizes */
+#cam_ss1 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: -13px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Table styles */
+table {
+  /* Removed display:flex for proper table behavior */
+  width: 88%;
+  margin-left: 50px;
+ 
+}
+
+#cam_row1 td{
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 5px;
+}
+
+#cam_row1-sub td{
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  border-radius: 5px;
+}
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+/* Row 1 container? */
+
+/* Boxes Styling */
+
+/* box1, #cam_shift-in */
+
+#cam_box1,
+#cam_shift-in {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 32px;
+}
+
+/* box3_4 */
+
+
+#cam_box2,
+#cam_kick-out {
+  padding: 5px;
+  font-size: 20px;
+
+}
+#cam_box2{
+  width: 30px;
+ 
+}
+#cam_kick-out {
+  width: 25px;
+
+}
+
+/* box11_12 */
+/* #cam_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#cam_box6 {
+  padding: 5px;
+  width: 85px;
+  font-size: 20px;
+}
+
+#cam_kick-in {
+  padding: 5px;
+  font-size: 20px;
+}
+
+/* box5_6 */
+
+#cam_box3 {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+   font-size: 32px;
+}
+
+#cam_shift-out {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180,229,162);
+   font-size: 32px;
+}
+
+/* box7_8 */
+/* #cam_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#cam_box4 {
+  padding: 5px;
+  width: 130px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#cam_A-cycle {
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+  font-size: 35px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#cam_box5 {
+  padding: 5px;
+  width: 120px;
+  font-size: 24px;
+ 
+}
+
+#cam_S-pass {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 32px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+#cam_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cam_tpt{
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+#cam_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#cam_top-box{
+  margin-left: -10%;
+  margin-top: -45px;
+}
+
+/* Row 2 Table container */
+#cam_row2-tbl {
+  display: flex;
+  flex-direction: row;
+  margin-top: -70px;
+  margin-left: 115% !important;
+ 
+}
+
+#cam_row2-tbl,
+#cam_row2-tbl td {
+  border: none;
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 2px !important;
+  padding: 1px 0 !important;
+}
+
+.legend-item span{
+  font-size: 14px;
+}
+
+.icon-box {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.icon-box img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+
+/* Definition image text */
+#cam_def-img1,
+#cam_def-img2,
+#cam_def-img3 {
+  font-size: 12px;
+  border: none;
+}
+
+/* Chart or image containers */
+#cam_ch {
+  margin-left: 70%;
+  margin-top: -60px;
+}
+
+#cam_ch-pic {
+  margin-left: 70%;
+}
+
+/* Row 3 - flex container */
+#cam_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -19%;
+  margin-left: 20%;
+ 
+}
+
+/* Boxes inside row 3 */
+#cam_B-1,
+#cam_B-3,
+#cam_B-4{
+  margin-top: 50px;
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+ border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+/* Machines inside row 3 */
+
+#cam_machine1-2,
+#cam_machine1-3,
+#cam_machine1-4,
+#cam_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+   border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+/* Other men blocks */
+#cam_man-2{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  text-align: center;
+  height: 90px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+#cam_man2{
+  width: 30px;
+  height: 30px;
+  margin-top: -4px !important;
+  margin-left: 25px !important;
+}
+
+
+#cam_def-machine1-5{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 20px !important;
+  margin-top: 7px !important;
+}
+
+#cam_def-machine1-4{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 20px !important;
+  margin-top: 7px !important;
+}
+
+#cam_def-machine1-3{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 20px !important;
+  margin-top: 7px !important;
+}
+
+#cam_def-machine1-2{
+  width: 50px !important;
+  height: 50px !important;
+  margin-left: 20px !important;
+  margin-top: 30px !important;
+}
+
+#cam_def-machine2-1{
+  width: 50px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+/* manual dolly */
+
+#cam_md{
+  margin-top: -11% !important;
+  margin-left: 13%;
+  
+}
+
+#cam_dolly{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(219, 212, 212);
+}
+
+#cam_logic{
+  display: flex;
+}
+
+#cam_right-line{
+  margin-left: 400px;
+}
+
+#cam_left-line{
+  margin-top: -50px;
+}
+
+#cam_fd2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px !important;
+  margin-left: -1%;
+}
+
+#cam_fd1{
+  margin-top: 65px !important;
+  margin-left: -16%;
+}
+
+
+.cam_arrow-line{
+  margin-top: -200px !important;
+  margin-left: 400px;
+}
+.cam_arrow4{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.cam_arrow3{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow2{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow1{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrowlinedata1{
+  margin-left: 520px;
+}
+
+#cam_arrow3data{
+  width: 45px;
+  margin-left: 50px;
+    border: 1px solid black;
+}
+
+#cam_arrow2data{
+  width: 45px;
+  margin-left: 120px;
+    border: 1px solid black;
+}
+
+#cam_arrow1data{
+  width: 45px;
+  margin-left: 130px;
+    border: 1px solid black;
+}
+
+
+.cam_arrow-line2{
+  margin-top: 0px !important;
+  margin-left: 420px;
+}
+
+.cam_arrow6{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrowlinedata2{
+  margin-left: 515px;
+  margin-top: 60px;
+}
+
+#cam_arrow6data{
+  width: 45px;
+  margin-left: 100px;
+    border: 1px solid black;
+}
+
+/* Row 4 - flex container */
+#cam_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -5% !important;
+  margin-left: 20%;
+}
+
+#cam_B2-1,
+#cam_B2-2,
+#cam_B2-3,#cam_B2-4{
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+   border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+#cam_b24{
+  width: 55px;
+  margin-left: 2px;
+}
+
+#cam_machine2-1{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+   border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+#cam_man2-4,#cam_man2-5{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+  text-align: center;
+  height: 90px;
+ background-color: rgba(251,243,225);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+#cam_downarrow{
+  width: 35px;
+  margin-left: -40px !important;
+  border-radius: 5px;
+}
+
+#cam_downarrow-img{
+ width: 35px;
+}
+
+#cam_uparrow{
+ width: 35px;
+ border-radius: 5px;
+}
+
+#cam_uparrow-img{
+ width: 35px;
+}
+
+/* Row 5 Table */
+
+
+#cam_row5{
+  margin-left: -80px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: -4px;
+}
+#cam_row5-tbl {
+  margin-left: 90px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 16.5%;
+  height: 0%;
+  margin-top: 10px;
+}
+
+
+#cam_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  border-radius: 5px;
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 20px !important;
+}
+
+#cam_cell1 td{
+  background-color:rgba(2251,243,225) ;
+  border-radius: 5px !important;
+  width: 50px;
+}
+
+#cam_cell2, #cam_cell4{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#cam_cell3 td, #cam_cell5 td{
+  font-weight: bold;
+  padding: 10px;
+  height: 0px;
+  background-color: rgba(255, 255, 0, 0.51);
+  
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+/* Data Table Row 6 */
+#cam_row6-tbl {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19%;
+  margin-top: -210px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 58%;
+  table-layout: fixed; /* ✅ This locks column widths */
+  
+
+}
+
+
+#cam_row6-tbl td {
+  /* border: 1px solid #cam_ccc;  */
+ width: 140px;      
+  height: 0px;         
+  padding: 1px;
+  word-wrap: break-word; 
+  border: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* 
+#cam_timestd1,#cam_timestd2,#cam_timestd3,#cam_timestd4,#cam_timestd5,#cam_timestd6,#cam_timestd7,#cam_timestd8,#cam_timestd9{
+  width: px;
+} */
+
+
+#cam_quality1data1,#cam_quality1data2,#cam_quality1data3,#cam_quality1data4,#cam_quality2data1,#cam_quality2data2,#cam_quality2data3,#cam_quality2data4,#cam_quality3data1,#cam_quality3data2,#cam_quality3data3,#cam_quality3data4,#cam_quality4data1,#cam_quality4data2,#cam_quality4data3,#cam_quality4data4{
+ width: 150px;
+}
+
+#cam_row6-tbl tbody {
+  font-size: 17px;
+}
+
+#cam_line1,
+#cam_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+/* Buttons
+#cam_btns {
+  display: flex;
+  flex-direction: column;
+  width: 4.8%;
+  margin-left: 68%;
+  margin-top: -12.9%;
+  gap: 10px;
+}
+
+#cam_btn1 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgb(5, 245, 213);
+} */
+
+/* #cam_btn3 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgb(163, 183, 11);
+}
+
+#cam_btn4 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgba(165, 42, 42, 0.449);
+}
+ */
+
+
+
+/* Row 7 - Results */
+#cam_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 20%;
+}
+
+#cam_row7{
+  padding-left: 40px;
+    margin-top: -12.4% ;
+   margin-left: -80px;
+    margin-right: -80px;
+
+    
+}
+
+#cam_result1,
+#cam_result3 {
+  width: 52%;
+  font-size: 30px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#cam_result3 {
+  background-color: rgba(0,192,192);
+}
+
+#cam_result2{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#cam_result-img{
+  height: 50%;
+  width: 50%;
+}
+
+.green-cell {
+  background-color: green;
+  transition: background-color 0.3s; /* smooth change */
+}
+
+.red-cell {
+  background-color: red;
+  transition: background-color 0.3s;
+}
+
+.transparent-cell {
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* #cam_result2 {
+  width: 150px;
+  height: 170px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: rgb(74, 215, 49);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  text-align: center;
+} */
+
+@media (max-width:1000px)  {
+ html {
+  font-size: 100%; /* 16px default */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin-top: 5px;
+}
+
+
+/* Header */
+header {
+  display: flex;
+ flex-direction: column;
+
+}
+
+header h2 {
+  font-size: 25px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -45%;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/* Titles */
+#cam_tiei1 {
+  margin-top: -50px;
+  margin-left: 60px;
+  width: 20px;
+  height: 25px;
+}
+
+#cam_tiei2 {
+  margin-top: -27px;
+  margin-left: 30%;
+  width: 160px;
+  height: 35px;
+}
+
+#cam_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60%;
+  margin-top: -50px;
+  width: 10px !important ;
+  height: 10px !important;
+}
+
+#cam_settings{
+  width: 25px;
+  margin-left: 115px;
+}
+
+
+/* Dashboard Table */
+#cam_dashboard-table {
+  margin-top: 37px;
+  width: 90%;
+  margin-left: 4vw;
+  border: 0.05vw solid black;
+  display: flex;
+}
+
+/* Font sizes */
+#cam_ss1 {
+  font-size: 13px;
+  margin-top: 17px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+/* Table styles */
+table {
+  width: 88%;
+  margin-left: 40px;
+ 
+}
+
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+/* Row 1 container? */
+
+/* Boxes Styling */
+
+/* box1, #cam_shift-in */
+
+#cam_box1,
+#cam_shift-in {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* box3_4 */
+
+
+#cam_box2,
+#cam_kick-out {
+  padding: 3px;
+  font-size: 12px;
+
+}
+#cam_box2{
+  width: 30px;
+ 
+}
+#cam_kick-out {
+  width: 25px;
+  padding: 3px !important;
+
+}
+
+/* box11_12 */
+/* #cam_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#cam_box6 {
+  padding: 3px;
+  width: 85px;
+  font-size: 12px;
+}
+
+#cam_kick-in {
+  padding: 3px !important;
+  font-size: 12px;
+}
+
+/* box5_6 */
+
+#cam_box3 {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+   font-size: 18px;
+}
+
+#cam_shift-out {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180, 229, 162);
+  font-size: 1.6vw;
+}
+
+/* box7_8 */
+/* #cam_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#cam_box4 {
+  padding: 3px;
+  width: 130px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#cam_A-cycle {
+  padding: 3px;
+  width: 110px;
+  text-align: center;
+  font-size: 14px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#cam_box5 {
+  padding: 3px;
+  width: 120px;
+  font-size: 14px;
+  text-align: center;
+ 
+}
+
+#cam_S-pass {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  font-size: 14px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+#cam_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cam_layout{
+  margin-right: 1px;
+  margin-bottom: 30px;
+  font-size: 25px !important;
+  color: rgb(0,112,192);
+  font-style: italic;
+}
+
+#cam_top-box{
+  display: flex;
+  margin-left: -14%;
+  margin-top: -40px;
+}
+#cam_tpt{
+  font-weight: bold;
+  font-size: 12px;
+   margin-left: 10px !important;
+   margin-top: -15px !important;
+ 
+}
+
+#cam_tpt-data{
+  font-size: 8px !important;
+  margin-left: -100px !important;
+  padding: 4px;
+  margin-top: 0px !important;
+}
+
+#cam_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+/* Row 2 Table container */
+#cam_row2-tbl {
+  margin-left: 130%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+  height: 10px;
+ 
+}
+
+/* Definition image text */
+
+#cam_def-b{
+ width: 12px;
+ height: 10px;
+}
+
+#cam_def-machine{
+width: 12px;
+ height: 10px;
+}
+
+#cam_def-man{
+width: 12px;
+ height: 10px;
+}
+
+#cam_def-img1,
+#cam_def-img2,
+#cam_def-img3 {
+  font-size: 6px;
+  border: none;
+  width: 12px ;
+  height: 4px !important;
+}
+
+/* Chart or image containers */
+#cam_ch {
+  margin-left: 65%;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+#cam_ch-pic {
+  margin-left: 70%;
+  width: 13%;
+  height: 13%;
+}
+
+/* Row 3 - flex container */
+#cam_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -13%;
+  margin-left: -70px;
+ 
+}
+
+/* Man columns */
+#cam_man-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 60px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_man1,#cam_man2,#cam_man3,#cam_man4{
+  width: 29px;
+  height: 29px;
+}
+
+#cam_man1{
+  margin-top: 10px !important;
+  margin-left: 8px !important;
+}
+
+
+/* Boxes inside row 3 */
+#cam_B-1,
+#cam_B-2,
+#cam_B-3,
+#cam_B-4,
+#cam_B-5 {
+  margin-top: 35px;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_b1,#cam_b2,#cam_b3,#cam_b4,#cam_b5{
+  width: 20px;
+  height: 20px;
+  margin-top:2px !important;
+  margin-left: 2px !important;
+}
+
+/* Machines inside row 3 */
+#cam_machine1-1,
+#cam_machine1-2,
+#cam_machine1-3,
+#cam_machine1-4,
+#cam_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_machine5,#cam_machine4{
+  margin-left: 8px !important;
+  margin-top: 4px !important;
+  width: 30px !important;
+  height: 25px;
+}
+#cam_machine3,#cam_machine2{
+   margin-left: 6px !important;
+  margin-top: 14px !important;
+  width: 30px;
+  height: 25px !important;
+}
+#cam_machine1{
+   margin-left: 8px !important;
+  margin-top: 24px !important;
+  width: 30px;
+  height: 25px !important;
+}
+
+
+/* Other men blocks */
+#cam_man-2,
+#cam_man-3,
+#cam_man-4 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+ background-color: rgba(251,243,225);
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#cam_man2{
+  margin-left: 9px  !important;
+  margin-top: 10px !important;
+}
+
+#cam_man3{
+  margin-left: 9px !important;
+  margin-top: 1px !important;
+}
+#cam_man4{
+  margin-top: 11px !important;
+  margin-left: 11px !important;
+}
+/* manual dolly */
+
+#cam_md{
+  margin-top: -8%;
+  margin-left: 20px;
+}
+
+#cam_up{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 35px !important;
+  margin-bottom: 10px !important;
+}
+
+#cam_dolly{
+  margin-top: 20px !important;
+  padding: 10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+#cam_down{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 35px !important;
+  margin-top: 10px !important;
+}
+
+#cam_logic{
+  display: flex;
+  flex-direction: column;
+}
+
+#cam_flow-right{
+  margin-left:730px !important;
+  margin-top: -90px !important;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cam_right-line{
+  margin-left: -55px !important;
+  font-size: 10px !important;
+  margin-top: -80px !important;
+}
+
+#cam_flow-left{
+  margin-top: -40px !important;
+  margin-left: 685px !important;
+  font-size: 10px;
+}
+
+#cam_left-line{
+  margin-top: -56px !important;
+  font-size: 10px !important;
+  margin-left: -55px !important;
+}
+
+/*flow direction*/
+#cam_fd1{
+  margin-left: -50px;
+  display: flex;
+ 
+}
+#cam_fd2{
+  display: flex;
+  flex-direction: row;
+}
+/* Row 4 - flex container */
+#cam_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -3%;
+  margin-left: -70px;
+}
+
+#cam_man2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 55px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_B2-1,
+#cam_B2-2,
+#cam_B2-3,
+#cam_B2-4 {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_b21,#cam_b22,#cam_b23{
+  width: 20px;
+  height: 20px;
+  margin-left: 2px !important;
+  margin-top: 2px !important;
+}
+
+#cam_b24{
+  margin-top: 2px !important;
+  padding: 2px !important;
+  font-size: 10px;
+  border: 1px solid orange !important;
+}
+
+#cam_machine2-1,
+#cam_machine2-2,
+#cam_machine2-3,
+#cam_machine2-4,
+#cam_machine2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 65px;
+  background-color: rgba(204,255,255);
+  font-size: 8px;
+  font-weight: bold;
+
+}
+
+#cam_machine21,#cam_machine22,#cam_machine23,#cam_machine24,#cam_machine25{
+  width: 35px;
+  height: 25px;
+  margin-left: 5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 5px;
+
+}
+
+#cam_man2-2,
+#cam_man2-3 {
+  height: 30px;
+  width: 35px;
+background-color: rgba(251,243,225);
+font-weight: bold;
+}
+
+#cam_man2-4,
+#cam_man2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 55px;
+ background-color: rgba(251,243,225);
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#cam_man21{
+  width: 29px;
+  height: 29px;
+  margin-top: 0px !important;
+  margin-left: 8px !important;
+  margin-bottom: -11px ;
+}
+
+#cam_man22{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#cam_man23{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#cam_man24{
+  width: 29px;
+  height: 29px;
+  margin-left: 8px !important;
+}
+
+#cam_man25{
+  width: 29px;
+  height: 29px;
+  margin-left: 7px !important;
+  margin-bottom: -5px !important;
+}
+
+#cam_downarrow{
+   height: 34px !important;
+   margin-top: 32px !important;
+   margin-left: -24px !important;
+}
+
+#cam_downarrow-img{
+  height: 34px;
+  width: 20px;
+
+}
+
+#cam_uparrow{
+  height: 66px;
+  margin-left: 3px !important;
+}
+
+#cam_uparrow-img{
+  width: 20px;
+  height: 66px;
+
+}
+
+/* Row 5 Table */
+
+#cam_row5{
+  margin-left: -12px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 155px;
+}
+#cam_row5-tbl {
+  margin-left: 20px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 0%;
+  margin-top: -150px;
+}
+
+#cam_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 10px;
+  padding-bottom: -2%;
+}
+
+#cam_cell1 td{
+  background-color:rgba(2251,243,225) ;
+  width: 20px;
+  font-size: 15px !important;
+  padding: 1px !important;
+}
+
+#cam_cell2 , #cam_cell4 {
+  font-weight: bold;
+  padding: 2px !important;
+
+  font-size: 15px !important;
+  margin-top: -5px !important;
+}
+
+#cam_cell3 , #cam_cell5 {
+  font-weight: bold;
+  padding: 10px !important;
+  height: 25px;
+  background-color: rgba(255, 255, 0, 0.51);
+  font-size: 17px !important;
+}
+
+
+/* ---------------- Row 6 Table ---------------- */
+#cam_row6-tbl {
+  margin-left: 22%;
+  margin-top: -150px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 56%;
+  table-layout: fixed; /* ✅ Keeps consistent structure */
+  
+}
+
+/* Default cell styling */
+#cam_row6-tbl td {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  min-width: 50px;          
+  max-width: 80px;         
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  white-space: nowrap;          
+  word-wrap: break-word;
+} 
+/* Force smaller height only for line3, line4, and line5 */
+#cam_line3 td,
+#cam_line4 td,
+#cam_line5 td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.5 !important;
+  height: 4px !important;   /* try 4px – adjust if still too tall */
+  font-size: 8px !important; /* smaller font also helps reduce row height */
+  vertical-align: middle;    /* centers content in the small space */
+}
+
+
+
+/* ✅ Make only STD and DEV smaller */
+#cam_row6-tbl td#cam_std1,
+#cam_row6-tbl td#cam_dev {
+  width: 10px;        /* desired small width */
+  max-width: 10px;    /* prevent stretching */
+}
+
+#cam_time-stamp{
+  width: 5px;
+}
+/* Optional: prevent Time Stamp or Quality headers from pushing width */
+#cam_line1 td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+tbody {
+  font-size: 8px;
+}
+
+#cam_line1,
+#cam_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+/* Buttons */
+/* #cam_btns {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  margin-left: 73%;
+  margin-top: -13.7%;
+  gap: 10px;
+}
+
+#cam_btn1 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgb(5, 245, 213);
+} */
+
+/* #cam_btn3 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgb(163, 183, 11);
+}
+
+#cam_btn4 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgba(165, 42, 42, 0.449);
+} */
+
+/* Row 7 - Results */
+/* #cam_lastrow {
+  border: 0px solid rgba(0, 0, 0, 0.705);
+  width: 90%;
+  margin-left: 5%;
+} */
+
+#cam_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: -13.8%;
+  text-align: center;
+ border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 16%;
+}
+
+#cam_row7{
+  padding-left: 0px;
+ margin-bottom: 10px;
+}
+
+#cam_result1,
+#cam_result3 {
+  width: 49%;
+  font-size: 10px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  
+}
+#cam_result1{
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+#cam_result2{
+  border: 1px solid rgba(0, 0, 0, 0.178);
+}
+#cam_result3 {
+  background-color: rgba(0, 192, 192);
+  color: black;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#cam_result-img{
+  height: 92px;
+  width: 92px;
+}
+
+}
+
+@media(max-width:1600px) and (min-width:1001px){
+/* body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin-top: 10px !important;
+  
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+
+#cam_head1 header h2 {
+  font-size: 35px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -36% !important;
+  margin-top: -75px !important;
+}
+
+#cam_menu{
+  margin-top: -28px !important;
+  margin-left: -90% !important;
+  cursor: pointer;
+}
+
+#cam_live{
+  width: 70px;
+  height: 50px;
+  margin-left: 50%;
+  margin-top: -50px;
+}
+/* Titles */
+#cam_tiei1 {
+  margin-top: -75px;
+  margin-left: 180px;
+  width: 40px;
+  height: 45px;
+}
+
+#cam_tiei2 {
+  margin-top: -45px;
+  margin-left: 30%;
+  width: 200px;
+  height: 50px;
+}
+
+#cam_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 86%;
+  margin-top: -60px;
+}
+
+
+/* Dashboard Table */
+#cam_dashboard-table {
+  margin-top: 10px;
+  width: 90%;
+  height: 70px;
+  margin-left: 80px;
+  border: 1px solid black;
+  padding: 0px;
+  display: flex;
+}
+
+/* Font sizes */
+#cam_ss1 {
+  font-size: 26px;
+  margin-top: 23px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+/* Table styles */
+table {
+  /* Removed display:flex for proper table behavior */
+  width: 88%;
+  margin-left: 50px;
+ 
+}
+
+#cam_row1 td{
+  border: 1px solid rgba(0, 0, 0, 0.411);
+}
+
+#cam_row1-sub td{
+  border: 1px solid rgba(0, 0, 0, 0.486);
+}
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+#cam_box1,
+#cam_shift-in {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* box3_4 */
+
+
+#cam_box2,
+#cam_kick-out {
+  padding: 5px;
+  font-size: 18px;
+}
+#cam_box2{
+  width: 30px;
+ 
+}
+#cam_kick-out {
+  width: 25px;
+
+}
+
+/* box11_12 */
+/* #cam_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#cam_box6 {
+  padding: 5px;
+  width: 85px;
+  font-size: 18px;
+}
+
+#cam_kick-in {
+  padding: 5px;
+  font-size: 18px;
+}
+
+/* box5_6 */
+
+#cam_box3 {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+   font-size: 30px;
+}
+
+#cam_shift-out {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180,229,162);
+  font-size: 30px;
+}
+
+#cam_box4 {
+  padding: 5px;
+  width: 130px;
+  font-size: 23px;
+  text-align: center;
+}
+
+#cam_A-cycle {
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+  font-size: 35px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#cam_box5 {
+  padding: 5px;
+  width: 120px;
+  font-size: 24px;
+ 
+}
+
+#cam_S-pass {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 32px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+#cam_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cam_tpt{
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+#cam_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#cam_top-box{
+  margin-left: -10%;
+  margin-top: -35px !important;
+}
+
+/* Row 2 Table container */
+#cam_row2-tbl {
+  margin-left: 119% !important;
+  display: flex;
+  flex-direction: column;
+  margin-top: -70px !important;
+ 
+}
+
+#cam_row2-tbl,
+#cam_row2-tbl td {
+  border: none;
+}
+
+
+#cam_row2-tbl .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0px !important;
+  padding: 0px 0 !important;
+}
+
+#cam_row2-tbl  .legend-item span{
+  font-size: 12px !important;
+}
+
+#cam_row2-tbl  .legend-item .icon-box {
+  width: 24px !important;
+  height: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+#cam_row2-tbl  .legend-item .icon-box img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+/* Chart or image containers */
+#cam_ch {
+  margin-left: 70%;
+  margin-top: -60px;
+}
+
+#cam_ch-pic {
+  margin-left: 70%;
+}
+
+/* Row 3 - flex container */
+#cam_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -17.5%;
+  margin-left: 17%;
+ 
+}
+
+/* Boxes inside row 3 */
+#cam_B-1,
+#cam_B-3,
+#cam_B-4{
+  margin-top: 50px;
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+}
+
+/* Machines inside row 3 */
+
+#cam_machine1-2,
+#cam_machine1-3,
+#cam_machine1-4,
+#cam_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+}
+
+/* Other men blocks */
+#cam_man-2{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  text-align: center;
+  height: 90px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+}
+
+/* manual dolly */
+
+#cam_md{
+  margin-top: -12% !important;
+  margin-left: 10%;
+}
+
+#cam_dolly{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 10px;
+}
+
+#cam_logic{
+  display: flex;
+}
+
+#cam_right-line{
+  margin-left: 400px;
+}
+
+#cam_left-line{
+  margin-top: -50px;
+}
+
+#cam_fd2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px !important;
+  margin-left: -5%;
+}
+
+#cam_fd1{
+  margin-top: 95px !important;
+  margin-left: -21% !important;
+}
+
+
+.cam_arrow-line{
+  margin-top: -125px !important;
+  margin-left: 290px;
+}
+.cam_arrow4{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.cam_arrow3{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow2{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow1{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrowlinedata1{
+  margin-left: 400px;
+  margin-top: -5px;
+}
+
+#cam_arrow3data{
+  width: 45px;
+  margin-left: 50px;
+    border: 1px solid black;
+}
+
+#cam_arrow2data{
+  width: 45px;
+  margin-left: 120px;
+    border: 1px solid black;
+}
+
+#cam_arrow1data{
+  width: 45px;
+  margin-left: 130px;
+    border: 1px solid black;
+}
+
+
+.cam_arrow-line2{
+  margin-top: -10px !important;
+  margin-left: 320px;
+}
+
+.cam_arrow6{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrowlinedata2{
+  margin-left: 440px;
+  margin-top: 40px;
+}
+
+#cam_arrow6data{
+  width: 45px;
+  margin-left: 100px;
+    border: 1px solid black;
+}
+
+/* Row 4 - flex container */
+#cam_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -7.5% !important;
+  margin-left: 17%;
+}
+
+#cam_B2-1,
+#cam_B2-2,
+#cam_B2-3,#cam_B2-4{
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_b24{
+  width: 55px;
+  margin-left: 2px;
+}
+
+#cam_machine2-1{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+}
+
+#cam_man2-4,#cam_man2-5{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+  text-align: center;
+  height: 90px;
+ background-color: rgba(251,243,225);
+}
+
+/* Row 5 Table */
+
+
+#cam_row5{
+  margin-left: -80px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: -4px;
+}
+#cam_row5-tbl {
+  margin-left: 85px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 16.5%;
+  height: 0%;
+  margin-top: 10px;
+}
+
+
+#cam_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 10px !important;
+}
+
+#cam_cell1{
+  background-color:rgba(2251,243,225) ;
+  width: 50px;
+}
+
+#cam_cell2, #cam_cell4{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#cam_cell3, #cam_cell5{
+  font-weight: bold;
+  padding: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 0, 0.51);
+  font-size: 25px;
+}
+
+/* Data Table Row 6 */
+#cam_row6-tbl {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18%;
+  margin-top: -240px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 58%;
+  table-layout: fixed; /* ✅ This locks column widths */
+  
+
+}
+
+
+#cam_row6-tbl td {
+
+ width: 140px;      
+  height: 0px;         
+  padding: 1px;
+  word-wrap: break-word; 
+  border: 1px solid rgba(0, 0, 0, 0.205);
+}
+
+#cam_quality1data1,#cam_quality1data2,#cam_quality1data3,#cam_quality1data4,#cam_quality2data1,#cam_quality2data2,#cam_quality2data3,#cam_quality2data4,#cam_quality3data1,#cam_quality3data2,#cam_quality3data3,#cam_quality3data4,#cam_quality4data1,#cam_quality4data2,#cam_quality4data3,#cam_quality4data4{
+ width: 150px;
+}
+
+#cam_row6-tbl tbody {
+  font-size: 17px;
+}
+
+#cam_line1,
+#cam_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+#cam_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 20%;
+}
+
+#cam_row7{
+  padding-left: 40px;
+    margin-top: -12% !important ;
+   margin-left: -200px !important;
+    margin-right: -80px;
+
+    
+}
+
+#cam_result1,
+#cam_result3 {
+  width: 52%;
+  font-size: 30px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#cam_result3 {
+  background-color: rgba(0,192,192);
+}
+
+#cam_result2{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#cam_result-img{
+  height: 50%;
+  width: 50%;
+}
+
+}
+
+
+@media (min-width: 766px) and (max-width:999px){
+ html {
+  font-size: 100%;
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin-top: 5px;
+}
+
+header {
+  display: flex;
+ flex-direction: column;
+}
+
+#cam_head1 header h2 {
+  font-size: 28px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -25% !important;
+  margin-top: 35px !important;
+  font-weight: bold;
+}
+
+#cam_topic{
+  font-size: 30px !important;
+}
+
+#cam_menu{
+  margin-left: -80% !important;
+  margin-right: 0px !important;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  display: none !important;
+}
+
+#cam_tiei1 {
+  margin-top: -60px;
+  margin-left: 290px;
+  width: 25px;
+  height: 30px;
+}
+
+#cam_tiei2 {
+  margin-top: -35px;
+  margin-left: 58%;
+  width: 260px;
+  height: 40px;
+}
+
+#cam_live{
+  margin-top: -30px;
+  margin-left: 55%;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  display: block;
+}
+
+#cam_tiei3 {
+  display: flex;  
+  flex-direction: column;
+  margin-left: 80%;
+  margin-top: -50px !important;
+  width: 3px !important ;
+  height: 1px !important;
+  display: block;
+}
+
+#cam_live, #cam_tiei3 {
+  display: none !important;
+}
+
+#cam_settings{
+  width: 5px !important;
+  margin-left: 135px;
+}
+#cam_dashboard-table {
+  margin-top: 6px;
+  width: 90%;
+  height: 50px;
+  margin-left: 4vw;
+  border: 0.05vw solid black;
+  border-radius: 5px;
+  display: flex;
+
+}
+
+#cam_ss1 {
+  font-size: 13px;
+  margin-top: 17px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+table {
+  width: 88%;
+  margin-left: 40px;
+ 
+}
+
+td {
+  border: 1px solid rgb(0, 0, 0);
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+
+#cam_box1,
+#cam_shift-in {
+  padding: -3px;
+  width: 95px;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+#cam_box2,
+#cam_kick-out {
+  padding: 3px;
+  font-size: 12px;
+  border-radius: 5px;
+
+}
+#cam_box2{
+  width: 30px;
+ 
+}
+#cam_kick-out {
+  width: 25px;
+  padding: 3px !important;
+  
+
+}
+
+/* box11_12 */
+/* #cam_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#cam_box6 {
+  padding: 3px;
+  width: 85px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#cam_kick-in {
+  padding: 3px !important;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+#cam_box3 {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+   font-size: 25px;
+   border-radius: 5px;
+}
+
+#cam_shift-out {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180, 229, 162);
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+/* box7_8 */
+/* #cam_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#cam_box4 {
+  padding: 3px;
+  width: 130px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#cam_A-cycle {
+  padding: 3px;
+  width: 110px;
+  text-align: center;
+  font-size: 25px;
+ background-color: rgba(251,243,225);
+  color: red;
+  border-radius: 5px;
+}
+
+#cam_box5 {
+  padding: 3px;
+  width: 120px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+ 
+}
+
+#cam_S-pass {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(180,229,162);
+  border-radius: 5px;
+}
+
+#cam_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cam_layout{
+  margin-right: 1px;
+  margin-bottom: 30px;
+  font-size: 25px !important;
+  color: rgb(0,112,192);
+  font-style: italic;
+}
+
+#cam_top-box{
+  display: flex;
+  margin-left: -14%;
+  margin-top: -40px;
+}
+#cam_tpt{
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px !important;
+  margin-top: -15px !important;
+ 
+}
+
+#cam_tpt-data{
+  font-size: 9px !important;
+  margin-left: -112px !important;
+  padding: 4px;
+  margin-top: 0px !important;
+}
+
+#cam_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#cam_row2-tbl {
+  margin-left: 121%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -45px !important;
+  height: 0px;
+  border-radius: 5px;
+}
+
+
+#cam_row2-tbl .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0px !important;
+  padding: 0px 0 !important;
+  font-size: 10px !important;
+}
+
+#cam_row2-tbl .legend-item span{
+  font-size: 8px !important;
+}
+
+#cam_row2-tbl .legend-item .icon-box {
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+#cam_row2-tbl .legend-item .icon-box img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+#cam_def-img1,
+#cam_def-img2,
+#cam_def-img3 {
+  font-size: 8px !important;
+  border: none;
+}
+
+#cam_def-img2,
+#cam_def-img3 {
+  padding: 3px 3px !important;
+}
+
+#cam_def_man{
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: -5px !important;
+}
+
+#cam_def-b{
+  width: 15px;
+  height: 15px;
+}
+
+#cam_def-machine{
+  width: 15px;
+  height: 15px;
+  
+}
+
+#cam_machine_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 5px !important;
+  border: 1px solid rgb(219, 212, 212);
+
+}
+
+#cam_man_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 5px !important;
+  border: 1px solid rgb(219, 212, 212);
+}
+
+
+#cam_b_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 5px !important;
+  border: 1px solid rgb(219, 212, 212);
+}
+
+#cam_ch {
+  margin-left: 70%;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+
+#cam_ch-pic {
+  margin-left: 70%;
+  width: 20% !important;
+  height: 21% !important;
+}
+
+#cam_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -17% !important;
+  margin-left: 170px;
+ 
+}
+
+#cam_man-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 60px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 7px !important;
+  font-weight: bold;
+}
+
+#cam_man1,#cam_man2,#cam_man3,#cam_man4{
+  width: 29px;
+  height: 29px;
+}
+
+#cam_man1{
+  margin-top: 10px !important;
+  margin-left: 8px !important;
+}
+
+#cam_B-1,
+#cam_B-2,
+#cam_B-3,
+#cam_B-4,
+#cam_B-5 {
+  margin-top: 35px;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(180,229,162);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+}
+
+#cam_b1,#cam_b2,#cam_b3,#cam_b4,#cam_b5{
+  width: 20px;
+  height: 20px;
+  margin-top:2px !important;
+  margin-left: 2px !important;
+}
+
+#cam_machine1-1,
+#cam_machine1-2,
+#cam_machine1-3,
+#cam_machine1-4,
+#cam_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_machine5,#cam_machine4{
+  margin-left: 8px !important;
+  margin-top: 4px !important;
+  width: 30px !important;
+  height: 25px;
+}
+#cam_machine3,#cam_machine2{
+   margin-left: 6px !important;
+  margin-top: 14px !important;
+  width: 30px;
+  height: 25px !important;
+}
+#cam_machine1{
+   margin-left: 8px !important;
+  margin-top: 24px !important;
+  width: 30px;
+  height: 25px !important;
+}
+
+#cam_man-2,
+#cam_man-3,
+#cam_man-4 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+ background-color: rgba(251,243,225);
+ border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px !important;
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#cam_man2{
+  margin-left: 12px  !important;
+  margin-top: -1px !important;
+  width: 23px;
+  height: 23px;
+}
+
+#cam_man3{
+  margin-left: 9px !important;
+  margin-top: 1px !important;
+}
+#cam_man4{
+  margin-top: 11px !important;
+  margin-left: 11px !important;
+}
+
+#cam_def-machine1-5{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 8px !important;
+  margin-top: 5px !important;
+}
+
+#cam_def-machine1-4{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 8px !important;
+  margin-top: 5px !important;
+}
+
+#cam_def-machine1-3{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 8px !important;
+  margin-top: 5px !important;
+}
+
+#cam_def-machine1-2{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 8px !important;
+  margin-top: 15px !important;
+}
+
+#cam_def-machine2-1{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 20px !important;
+  margin-top: 15px !important;
+}
+
+#cam_md{
+  margin-top: -10.5% !important;
+  margin-left: 120px !important;
+  border-radius: 10px;
+}
+
+#cam_up{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 45px !important;
+  margin-bottom: 10px !important;
+}
+
+#cam_dolly{
+  margin-top: 20px !important;
+  padding: 10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  border-radius: 10px;
+}
+#cam_down{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 45px !important;
+  margin-top: 10px !important;
+}
+
+#cam_logic{
+  display: flex;
+  flex-direction: column;
+}
+
+#cam_flow-right{
+  margin-left:730px !important;
+  margin-top: -90px !important;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#cam_right-line{
+  margin-left: -65px !important;
+  font-size: 10px !important;
+  margin-top: -80px !important;
+}
+
+#cam_flow-left{
+  margin-top: -40px !important;
+  margin-left: 680px !important;
+  font-size: 10px;
+}
+
+#cam_left-line{
+  margin-top: -56px !important;
+  font-size: 10px !important;
+  margin-left: -62px !important;
+}
+
+#cam_fd1{
+  margin-left: -180px;
+  display: flex;
+  margin-top: -2px !important;
+  font-size: 10px;
+ 
+}
+#cam_fd2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px !important;
+  font-size: 10px;
+  margin-left: -200px !important; 
+}
+
+.cam_arrow-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -80px !important;
+    margin-left: 220px;
+}
+ 
+.cam_arrow1{
+  margin-left: -10px;
+  font-size: 9px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow2{
+  font-size: 8px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow3{
+  font-size: 9px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.cam_arrow4{
+  font-size: 9px;
+  margin-left: -10px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+/* .cam_arrow5{
+  font-size: 10px;
+  margin-left: 30px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+} */
+
+.cam_arrow6{
+
+  font-size: 9px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+/* 
+.cam_arrow7{
+  font-size: 10px;
+  
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.cam_arrow8{
+  font-size: 10px;
+
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.cam_arrow9{
+  font-size: 10px;
+
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.cam_arrow10{
+  font-size: 10px;
+
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+} */
+
+.cam_arrow-line2{
+  font-size: 20px;
+  margin-left: 210px;
+  margin-right: 0px;
+  margin-top: -15px !important;
+}
+
+
+.cam_arrowlinedata1{
+  margin-left: 170px;
+  margin-top: -5px;
+}
+
+/* #cam_arrow5data{
+  width: 30px;
+  margin-left: 0px;
+  font-size: 10px !important;
+  text-align: center;
+}
+
+#cam_arrow4data{
+  width: 30px;
+  margin-left: 60px;
+  font-size: 10px !important;
+  text-align: center;
+} */
+
+#cam_arrow3data{
+  width: 30px;
+  margin-left: 120px;
+    font-size: 10px !important;
+  text-align: center;
+  border: none;
+}
+
+#cam_arrow2data{
+  width: 30px;
+  margin-left: 60px;
+  font-size: 10px !important;
+  text-align: center;
+  border: none;
+}
+
+#cam_arrow1data{
+  width: 30px;
+  margin-left: 40px;
+  font-size: 10px !important;
+  text-align: center;
+  border: none;
+}
+.cam_arrowlinedata2{
+  margin-left:290px;
+  margin-top: 20px;
+}
+
+#cam_arrow6data{
+  width: 30px;
+  font-size: 10px !important;
+  margin-left: 0px;
+  text-align: center;
+  border: none;
+}
+/* 
+#cam_arrow7data{
+  width: 30px;
+  font-size: 10px !important;
+  margin-left: 40px;
+    text-align: center;
+}
+
+#cam_arrow8data{
+  width: 30px;
+  font-size: 10px !important;
+  margin-left: 50px;
+    text-align: center;
+}
+
+#cam_arrow9data{
+  width: 30px;
+  font-size: 10px !important;
+  margin-left: 30px;
+    text-align: center;
+}
+
+#cam_arrow10data{
+  width: 30px;
+  font-size: 10px !important;
+  margin-left: 70px;
+  text-align: center;
+} */
+
+#cam_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -3.5% !important;
+  margin-left: 170px;
+}
+
+#cam_man2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 55px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_B2-1,
+#cam_B2-2,
+#cam_B2-3,
+#cam_B2-4 {
+  height: 25px;
+  width: 30px;
+  background-color: rgba(180,229,162);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+}
+
+#cam_b21,#cam_b22,#cam_b23{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px !important;
+  margin-top: 2px !important;
+}
+
+#cam_b24{
+  margin-top: 2px !important;
+  margin-left: 1px;
+  padding: 2px !important;
+  font-size: 12px;
+  width: 22px;
+  border: 1px solid orange !important;
+}
+
+#cam_machine2-2,
+#cam_machine2-3,
+#cam_machine2-4,
+#cam_machine2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 65px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 8px;
+  font-weight: bold;
+
+}
+
+#cam_machine2-1{
+   display: flex;
+  flex-direction: column;
+  width: 65px;
+  text-align: center;
+  height: 65px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#cam_machine21,#cam_machine22,#cam_machine23,#cam_machine24,#cam_machine25{
+  width: 35px;
+  height: 25px;
+  margin-left: 5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 5px;
+}
+
+/* #cam_man2-2,
+#cam_man2-3 {
+  height: 30px;
+  width: 35px;
+background-color: rgba(251,243,225);
+font-weight: bold;
+} */
+
+#cam_man2-4,
+#cam_man2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 55px;
+  text-align: center;
+  height: 55px;
+ background-color: rgba(251,243,225);
+ border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px !important;
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#cam_man21{
+  width: 29px;
+  height: 29px;
+  margin-top: 0px !important;
+  margin-left: 8px !important;
+  margin-bottom: -11px ;
+}
+
+#cam_man22{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#cam_man23{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#cam_man24{
+  width: 29px;
+  height: 29px;
+  margin-left: 14px !important;
+}
+
+#cam_man25{
+  width: 29px;
+  height: 29px;
+  margin-left: 13px !important;
+  margin-bottom: -5px !important;
+}
+
+#cam_downarrow{
+   height: 34px !important;
+   margin-top: 32px !important;
+   margin-left: -24px !important;
+   width: 20px;
+}
+
+#cam_downarrow-img{
+  height: 34px;
+  width: 20px;
+
+}
+
+#cam_uparrow{
+  height: 66px;
+  margin-left: 3px !important;
+  width: 20px;
+}
+
+#cam_uparrow-img{
+  width: 20px;
+  height: 66px;
+
+}
+
+#cam_row5{
+  margin-left: -12px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 12px;
+  margin-top: 155px;
+}
+#cam_row5-tbl {
+  margin-left: 20px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  
+  margin-top: -150px;
+}
+
+#cam_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90% ;    
+  margin-left: 5%;
+  margin-top: 5px !important;
+  padding-bottom: -2%;
+  border-radius: 5px;
+}
+
+#cam_cell1 td{
+  background-color:rgba(2251,243,225) ;
+  font-size: 13px !important;
+  height: 25px !important;
+  padding: 2px !important;
+   white-space: nowrap; 
+   border-radius: 5px !important;
+}
+
+#cam_cell2 td, #cam_cell4 td{
+  font-weight: bold;
+  padding: 2px !important;
+  font-size: 12px !important;
+  margin-top: -5px !important;
+  padding-right: 2px !important;
+}
+
+#cam_cell3 td, #cam_cell5 td {
+  font-weight: bold;
+  padding: 5px !important;
+  height: 10px !important;
+  background-color: rgba(255, 255, 0, 0.51);
+  font-size: 12px !important;
+  border-radius: 5px !important;
+}
+
+#cam_row6-tbl {
+  margin-left: 16.8% !important;
+  margin-top: -150px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 62% !important;
+  table-layout: fixed;
+  
+}
+
+#cam_row6-tbl td {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  min-width: 50px;          
+  max-width: 80px;         
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  white-space: nowrap;          
+  word-wrap: break-word;
+} 
+
+#cam_line3 td,
+#cam_line4 td,
+#cam_line5 td,#cam_line6 td,
+#cam_line7 td,
+#cam_line8 td,#cam_line9 td,
+#cam_line10 td,
+#cam_line11 td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.5 !important;
+  height: 4px !important;  
+  font-size: 8px !important; 
+  vertical-align: middle;    
+}
+
+#cam_row6-tbl td#cam_std1,
+#cam_row6-tbl td#cam_dev {
+  width: 8px !important;        
+  max-width: 8px !important;   
+}
+
+#cam_time-stamp{
+  width: 5px;
+}
+
+#cam_line1 td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+tbody {
+  font-size: 8px !important;
+}
+
+#cam_line1,
+#cam_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 10px !important;
+  font-weight: bold;
+}
+
+
+/* Buttons */
+/* #cam_btns {
+  display: flex;
+  flex-direction: column;
+  width: 5%;
+  margin-left: 73%;
+  margin-top: -13.7%;
+  gap: 10px;
+}
+
+#cam_btn1 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgb(5, 245, 213);
+} */
+
+/* #cam_btn3 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgb(163, 183, 11);
+}
+
+#cam_btn4 {
+  padding: 6px;
+  font-size: 6px;
+  background-color: rgba(165, 42, 42, 0.449);
+} */
+
+/* Row 7 - Results */
+/* #cam_lastrow {
+  border: 0px solid rgba(0, 0, 0, 0.705);
+  width: 90%;
+  margin-left: 5%;
+} */
+
+#cam_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: -9%;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;  
+  overflow: hidden; 
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  width: 17%;
+}
+
+#cam_row7{
+  padding-left: 0px;
+ margin-bottom: -8px !important;
+ margin-top: 10px;
+}
+
+#cam_result1,
+#cam_result3 {
+  width: 49%;
+  font-size: 10px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  
+  
+}
+#cam_result1{
+  font-size: 14px;
+  padding-bottom: 4px;
+  
+}
+
+#cam_result2{
+  border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+#cam_result3 {
+  background-color: rgba(0, 192, 192);
+  color: black;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+}
+#cam_result-img{
+  height: 92px;
+  width: 92px;
+}
+
+}

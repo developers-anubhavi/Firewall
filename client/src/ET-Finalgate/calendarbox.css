@@ -1,0 +1,529 @@
+.et_cal-box {
+  width: 260px;
+  border: 1px solid #00000049;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  margin-left: 81%;
+  margin-top: -14.5% !important;
+  height: 210px;
+  background-color: rgba(173, 216, 230, 0.418);
+  border-radius: 10%;
+}
+
+.et_cal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: rgb(63, 157, 219);
+  margin-top: 0px;
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+ 
+}
+
+.et_month {
+  margin-left: 10px;
+}
+.et_month-dropdown:hover{
+    background-color: #004175;
+}
+
+.et_year-dropdown:hover{
+    background-color: #004175;
+}
+
+.et_year {
+  margin-right: 10px;
+}
+
+
+.et_backwardarrow{
+ cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px
+}
+
+.et_forwardarrow{
+   cursor: pointer;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.et_cal-week,
+.et_cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 15px;
+ 
+}
+
+.et_cal-grid{
+  font-size: 13px;
+  color: rgb(0, 99, 248);;
+}
+
+.et_cal-weekday {
+  font-weight: bold;
+  padding: 3px 0;
+  margin-top: -5px;
+}
+
+.et_cal-cell {
+  padding: 4px 0;
+}
+
+.et_cal-cell:hover{
+
+  cursor: pointer;
+}
+
+.et_month-dropdown, .et_year-dropdown {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-size: 17px
+}
+
+/* .et_month-dropdown:focus, .et_year-dropdown:focus {
+  outline: 2px solid blue;
+} */
+
+
+.et_shifts{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.et_shift1,.et_shift2,.et_shift3{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 25px;
+  background-color:rgb(63, 157, 219);
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-left: 97%;
+  margin-top: -250px !important;
+  width: 2.8%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.et_shift2{
+  margin-top: 0% !important;
+}
+
+.et_shift3{
+  margin-top: 0% !important;
+}
+
+.et_shift1:hover,.et_shift2:hover,.et_shift3:hover{
+  cursor: pointer;
+  background-color: rgb(24, 119, 170);
+}
+.et_clear-data{
+   display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 28px;
+  background-color: rgb(219, 149, 57);
+  color: white;
+  padding: 4px;
+  border-radius: 10px;
+  margin-left: 81%;
+  width: 18%;
+  margin-top: -25px !important;
+  justify-content: center;
+}
+.et_clear-data:hover{
+  cursor: pointer;
+  background-color: rgb(197, 112, 0);
+}
+
+
+
+.et_shift-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+
+.et_cal-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: bold;
+}
+
+
+.et_cal-cell.et_selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.et_cal-cell.et_selected:hover {
+  background-color: #004175;
+  color: #fff; 
+  cursor: pointer;
+}
+
+.et_cal-cell.et_inactive {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+
+
+.et_selected-date {
+  background-color:#00aaff;
+  color: white;
+}
+
+
+.et_selected-type {
+  background-color: #00aaff;
+  color: white;
+  border: 1px solid #0077cc;
+}
+
+.et_custom-dropdown {
+  position: relative;
+  width: 90px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.et_custom-dropdown .et_selected {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.et_custom-dropdown .et_dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.et_custom-dropdown .et_dropdown-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+}
+
+.et_custom-dropdown .et_dropdown-list li.et_active {
+  background-color: #004175;
+  color: white;
+  font-weight: bold;
+}
+
+.et_custom-dropdown .et_dropdown-list li:hover {
+  background-color: #dcefff;
+}
+
+@media(max-width:1600px) and (min-width:1001px){
+  .et_cal-box {
+  width: 200px;
+  border: 1px solid #00000049;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  margin-left: 81% !important;
+  margin-top: -15% !important;
+  height: 170px;
+  background-color: rgba(173, 216, 230, 0.418);
+  border-radius: 10%;
+}
+
+.et_cal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 18px !important;
+  background-color: rgb(63, 157, 219);
+  margin-top: -1px;
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+ 
+}
+
+.et_month {
+  margin-left: 10px;
+  font-size: 18px !important;
+}
+.et_month-dropdown:hover{
+    background-color: #004175;
+}
+
+.et_year-dropdown:hover{
+    background-color: #004175;
+}
+
+.et_year {
+  margin-right: 10px;
+    font-size: 18px !important;
+}
+
+
+.et_backwardarrow{
+ cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px
+}
+
+.et_forwardarrow{
+   cursor: pointer;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.et_cal-week,
+.et_cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 13px !important; 
+}
+
+.et_cal-grid{
+  font-size: 10px !important;
+  color: rgb(0, 99, 248);
+  margin-top: 0px;
+}
+
+.et_cal-weekday {
+  font-weight: bold;
+  padding: 3px 0;
+  margin-top: -11px;
+  font-size: 12px !important;
+}
+
+.et_cal-cell {
+  padding: 4px 0;
+}
+
+.et_cal-cell:hover{
+
+  cursor: pointer;
+}
+
+.et_month-dropdown, .et_year-dropdown {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-size: 10px !important
+}
+
+/* .et_month-dropdown:focus, .et_year-dropdown:focus {
+  outline: 2px solid blue;
+} */
+
+
+.et_shifts{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 5px !important;
+}
+
+.et_shift1,.et_shift2,.et_shift3{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px !important;
+  background-color:rgb(63, 157, 219);
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 96%;
+  width: 3%;
+  height: 40px !important;
+  margin-top: -15% !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.et_shift2{
+  margin-top: 0% !important;
+}
+
+.et_shift3{
+  margin-top: 0% !important;
+}
+
+.et_shift1:hover,.et_shift2:hover,.et_shift3:hover{
+  cursor: pointer;
+  background-color: rgb(24, 119, 170);
+}
+.et_clear-data{
+   display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 20px !important;
+  background-color: rgb(219, 149, 57);
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 80%;
+  width: 19%;
+  margin-top: -46px;
+  justify-content: center;
+}
+.et_clear-data:hover{
+  cursor: pointer;
+  background-color: rgb(197, 112, 0);
+}
+
+
+
+.et_shift-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+
+.et_cal-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: bold;
+}
+
+
+.et_cal-cell.et_selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.et_cal-cell.et_selected:hover {
+  background-color: #004175;
+  color: #fff;
+  cursor: pointer;
+}
+
+.et_cal-cell.et_inactive {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+
+
+.et_selected-date {
+  background-color:#00aaff;
+  color: white;
+}
+
+
+.et_selected-type {
+  background-color: #00aaff;
+  color: white;
+  border: 1px solid #0077cc;
+}
+
+.et_custom-dropdown {
+  position: relative;
+  width: 90px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.et_custom-dropdown .et_selected {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.et_custom-dropdown .et_dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.et_custom-dropdown .et_dropdown-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+}
+
+.et_custom-dropdown .et_dropdown-list li.et_active {
+  background-color: #004175;
+  color: white;
+  font-weight: bold;
+}
+
+.et_custom-dropdown .et_dropdown-list li:hover {
+  background-color: #dcefff;
+}
+}

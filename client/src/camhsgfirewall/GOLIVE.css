@@ -1,0 +1,482 @@
+.cam_live_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cam_live_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cam_live_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#cam_live_title{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 33%;
+    color: rgb(10, 77, 102);
+}
+
+/* Row 3 - flex container */
+#cam_live_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8%;
+  margin-left: 26%; 
+}
+
+
+/* Boxes inside row 3 */
+#cam_live_B-1,
+#cam_live_B-2,
+#cam_live_B-3{
+  margin-top: 50px;
+  height: 70px;
+  width: 80px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_live_b1,
+#cam_live_b2,
+#cam_live_b3{
+  height: 55px;
+  width: 60px;
+  margin-left: 10px !important;
+}
+
+/* Machines inside row 3 */
+
+#cam_live_machine1-2,
+#cam_live_machine1-3,
+#cam_live_machine1-4,
+#cam_live_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  text-align: center;
+  height: 120px;
+  background-color: rgba(204,255,255);
+}
+
+/* Other men blocks */
+#cam_live_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+}
+
+#cam_live_boxrow1{
+    margin-top: 0%;
+    margin-left: 30.4% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+#cam_live_boxrow1_1,#cam_live_boxrow1_2,#cam_live_boxrow1_3,#cam_live_boxrow1_4{
+  width: 95px;
+  text-align: center;
+}
+
+#cam_live_boxrow1_2{
+margin-left: 88px !important;
+text-align: center;
+}
+
+#cam_live_boxrow1_3{
+margin-left: 78px !important;
+text-align: center;
+}
+
+#cam_live_boxrow1_4{
+margin-left: 75px !important;
+text-align: center;
+}
+
+#cam_live_boxrow2{
+    margin-top: 3%;
+    margin-left: 49.9%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+#cam_live_boxrow2_1{
+  width: 140px;
+  text-align: center;
+}
+
+.cam_live_engineBox {
+  width: 117px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.cam_live_engineNo {
+  background-color: rgba(6, 72, 130); 
+  color: whitesmoke;
+  padding: 2px;
+  height: 50%;
+}
+
+.cam_live_engineCode {
+  background-color: white; 
+  color: rgba(6, 72, 130);
+  font-weight: bolder;
+  padding: 2px;
+  height: 50%;
+  text-align: center;
+}
+
+/* Row 4 - flex container */
+#cam_live_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0% !important;
+  margin-left: 26%;
+}
+
+#cam_live_B2-1,
+#cam_live_B2-2,
+#cam_live_B2-3,#cam_live_B2-4{
+  height: 65px;
+  width: 80px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_live_b21,
+#cam_live_b22,
+#cam_live_b23{
+  height: 55px;
+  width: 60px;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
+}
+
+#cam_live_b24{
+  width: 55px;
+  margin-left: 2px;
+  font-size: 22px !important;
+}
+
+#cam_live_machine2-1{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  text-align: center;
+  height: 120px;
+  background-color: rgba(204,255,255);
+}
+
+#cam_live_man2-1,#cam_live_man2-2{
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  text-align: center;
+  height: 100px;
+ background-color: rgba(251,243,225);
+}
+
+#cam_live_man21,#cam_live_man22{
+  width: 45px;
+  height: 45px;
+}
+
+
+
+#cam_live_downarrow{
+   height: 70px !important;
+   margin-top: 70px !important;
+   margin-left: -45px !important;
+}
+
+#cam_live_downarrow-img{
+  height: 70px !important;
+  width: 40px;
+
+}
+
+#cam_live_uparrow{
+  height: 140px;
+  margin-left: 3px !important;
+}
+
+#cam_live_uparrow-img{
+  width: 40px;
+  height: 140px;
+
+}
+
+@media(max-width:1600px) and (min-width:1001px){
+.cam_live_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cam_live_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cam_live_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#cam_live_title{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 33%;
+    color: rgb(10, 77, 102);
+}
+
+/* Row 3 - flex container */
+#cam_live_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-left: 20%; 
+}
+
+
+/* Boxes inside row 3 */
+#cam_live_B-1,
+#cam_live_B-2,
+#cam_live_B-3{
+  margin-top: 50px;
+  height: 70px;
+  width: 80px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_live_b1,
+#cam_live_b2,
+#cam_live_b3{
+  height: 55px;
+  width: 60px;
+  margin-left: 10px !important;
+}
+
+/* Machines inside row 3 */
+
+#cam_live_machine1-2,
+#cam_live_machine1-3,
+#cam_live_machine1-4,
+#cam_live_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  text-align: center;
+  height: 120px;
+  background-color: rgba(204,255,255);
+}
+
+/* Other men blocks */
+#cam_live_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  text-align: center;
+  height: 100px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+}
+
+#cam_live_boxrow1{
+    margin-top: 0%;
+    margin-left: 27% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+#cam_live_boxrow1_1,#cam_live_boxrow1_2,#cam_live_boxrow1_3,#cam_live_boxrow1_4{
+  width: 95px;
+}
+#cam_live_boxrow1_2{
+margin-left: 88px !important;
+}
+#cam_live_boxrow1_3{
+margin-left: 78px !important;
+}
+#cam_live_boxrow1_4{
+margin-left: 75px !important;
+}
+
+#cam_live_boxrow2{
+    margin-top: 3%;
+    margin-left: 51.2%;
+    display: flex;
+    flex-direction: row;
+}
+
+#cam_live_boxrow2_1{
+  width: 140px;
+}
+
+.cam_live_engineBox {
+  width: 117px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.cam_live_engineNo {
+  background-color: rgba(6, 72, 130); 
+  color: whitesmoke;
+  padding: 2px;
+  height: 50%;
+}
+
+.cam_live_engineCode {
+  background-color: white; 
+  color: rgba(6, 72, 130);
+  font-weight: bolder;
+  padding: 2px;
+  height: 50%;
+  text-align: center;
+}
+
+/* Row 4 - flex container */
+#cam_live_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0% !important;
+  margin-left: 240px;
+}
+
+#cam_live_B2-1,
+#cam_live_B2-2,
+#cam_live_B2-3,#cam_live_B2-4{
+  height: 65px;
+  width: 80px;
+  background-color: rgba(180,229,162);
+}
+
+#cam_live_b21,
+#cam_live_b22,
+#cam_live_b23{
+  height: 55px;
+  width: 60px;
+  margin-left: 10px !important;
+  margin-top: 5px !important;
+}
+
+#cam_live_b24{
+  width: 55px;
+  margin-left: 2px;
+  font-size: 22px !important;
+}
+
+#cam_live_machine2-1{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  text-align: center;
+  height: 120px;
+  background-color: rgba(204,255,255);
+}
+
+#cam_live_man2-1,#cam_live_man2-2{
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  text-align: center;
+  height: 100px;
+ background-color: rgba(251,243,225);
+}
+
+#cam_live_man21,#cam_live_man22{
+  width: 45px;
+  height: 45px;
+}
+
+
+
+#cam_live_downarrow{
+   height: 70px !important;
+   margin-top: 70px !important;
+   margin-left: -45px !important;
+}
+
+#cam_live_downarrow-img{
+  height: 70px !important;
+  width: 40px;
+
+}
+
+#cam_live_uparrow{
+  height: 140px;
+  margin-left: 3px !important;
+}
+
+#cam_live_uparrow-img{
+  width: 40px;
+  height: 140px;
+
+}
+}

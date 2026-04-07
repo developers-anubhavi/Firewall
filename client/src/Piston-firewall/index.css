@@ -1,0 +1,3332 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 48px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 80px;
+}
+
+#piston_menu{
+  margin-left: 80px;
+  margin-right: -75px;
+  cursor: pointer;
+}
+
+/* Titles */
+#piston_tiei1 {
+  margin-top: 0px;
+  margin-left: 50px;
+}
+
+#piston_tiei2 {
+  margin-top: -20px;
+  margin-left: 50px;
+}
+
+#piston_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 240px;
+  margin-top: -40px;
+}
+
+
+/* Dashboard Table */
+#piston_dashboard-table {
+  margin-top: -36px;
+  width: 90%;
+  height: 100px;
+  margin-left: 80px;
+  border: 1px solid black;
+  padding: 0px;
+  display: flex;
+  border-radius: 10px;
+}
+
+/* Font sizes */
+#piston_ss1 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: -13px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Table styles */
+table {
+  /* Removed display:flex for proper table behavior */
+  width: 88%;
+  margin-left: 50px;
+ 
+}
+
+#piston_row1 td{
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  border-radius: 10px;
+}
+
+#piston_row1-sub td{
+  border: 1px solid rgba(0, 0, 0, 0.486);
+  border-radius: 10px;
+}
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+/* Row 1 container? */
+
+/* Boxes Styling */
+
+/* box1, #piston_shift-in */
+
+#piston_box1,
+#piston_shift-in {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 36px;
+}
+
+/* box3_4 */
+
+
+#piston_box2,
+#piston_kick-out {
+  padding: 5px;
+  font-size: 22px;
+
+}
+#piston_box2{
+  width: 30px;
+ 
+}
+#piston_kick-out {
+  width: 25px;
+
+}
+
+/* box11_12 */
+/* #piston_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#piston_box6 {
+  padding: 5px;
+  width: 85px;
+  font-size: 22px;
+}
+
+#piston_kick-in {
+  padding: 5px;
+  font-size: 25px;
+}
+
+/* box5_6 */
+
+#piston_box3 {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+   font-size: 36px;
+}
+
+#piston_shift-out {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180,229,162);
+   font-size: 36px;
+}
+
+/* box7_8 */
+/* #piston_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#piston_box4 {
+  padding: 5px;
+  width: 130px;
+  font-size: 28px;
+  text-align: center;
+}
+
+#piston_A-cycle {
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+  font-size: 36px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#piston_box5 {
+  padding: 5px;
+  width: 120px;
+  font-size: 28px;
+ 
+}
+
+#piston_S-pass {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 36px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+
+#piston_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15px;
+}
+
+#piston_tpt{
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+#piston_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#piston_top-box{
+  margin-left: -3%;
+  margin-top: -27px;
+}
+
+/* Row 2 Table container */
+#piston_row2-tbl {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -80px;
+  margin-left: 115% !important;
+ 
+}
+
+#piston_row2-tbl,
+#piston_row2-tbl td {
+  border: none;
+}
+
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px !important;
+  padding: 3px 0;
+}
+
+.icon-box {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.icon-box img {
+  width: 22px;
+  height: 22px;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+
+/* Definition image text */
+#piston_def-img1,
+#piston_def-img2,
+#piston_def-img3 {
+  font-size: 12px;
+  border: none;
+}
+
+/* Chart or image containers */
+#piston_ch {
+  margin-left: 70%;
+  margin-top: -80px;
+}
+
+#piston_ch-pic {
+  margin-left: 70%;
+  margin-top: -10px;
+  width: 18%;
+  height: 18%;
+}
+
+/* Row 3 - flex container */
+#piston_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -17%;
+  margin-left: 25%;
+ 
+}
+
+/* Boxes inside row 3 */
+#piston_B-1,
+#piston_B-2,
+#piston_B-3,
+#piston_B-4{
+  margin-top: 50px;
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+/* Machines inside row 3 */
+
+#piston_machine1-2,
+#piston_machine1-3,
+#piston_machine1-4,
+#piston_machine1-1 {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+}
+
+/* Other men pistons */
+#piston_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  text-align: center;
+  height: 90px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+ border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px;
+}
+
+#piston_img_machine1-4{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+#piston_img_machine1-3{
+  width: 45px !important;
+  height: 45px !important;
+    margin-left: 15px;
+  margin-top: 20px;
+}
+
+#piston_img_machine1-2{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 15px;
+}
+
+#piston_img_machine1-1{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+#piston_img_machine2-1{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+#piston_img_machine2-2{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+#piston_img_machine2-3{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+
+#piston_img_machine2-4{
+  width: 45px !important;
+  height: 45px !important;
+  margin-left: 15px;
+  margin-top: 2px;
+}
+
+/* manual dolly */
+
+#piston_md{
+  margin-top: -11%;
+  margin-left: 17%;
+}
+
+#piston_dolly{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 10px;
+  
+}
+
+#piston_logic{
+  display: flex;
+}
+
+#piston_right-line{
+  margin-left: 400px;
+}
+
+#piston_left-line{
+  margin-top: -50px;
+}
+
+#piston_fd2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: -1%;
+}
+
+#piston_fd1{
+  margin-top: 60px;
+  margin-left: -18%;
+}
+
+.piston_arrow-line{
+  margin-top: -180px !important;
+  margin-left: 490px;
+}
+
+.piston_arrow3{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow2{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow1{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrowlinedata1{
+  margin-left: 520px;
+}
+
+#piston_arrow3data{
+  width: 45px;
+  margin-left: 0px;
+  border: none;
+  text-align: center;
+}
+
+#piston_arrow2data{
+  width: 45px;
+  margin-left: 190px;
+  border: none;
+      text-align: center;
+}
+
+#piston_arrow1data{
+  width: 45px;
+  margin-left: 190px;
+  border: none;
+      text-align: center;
+}
+
+
+.piston_arrow-line2{
+  margin-top: 0px !important;
+  margin-left: 500px;
+}
+
+.piston_arrow6{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow7{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow8{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrowlinedata2{
+  margin-left: 555px;
+  margin-top: 60px;
+}
+
+#piston_arrow7data{
+  width: 45px;
+  margin-left: 130px;
+  border: none;
+    text-align: center;
+}
+
+#piston_arrow8data{
+  width: 45px;
+  margin-left: 170px;
+  border: none;
+  text-align: center;
+}
+
+/* Row 4 - flex container */
+#piston_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -5%;
+  margin-left: 25%;
+}
+
+#piston_B2-1{
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+   border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px;
+}
+
+#piston_b21{
+  width: 48px;
+  margin-left: 2px;
+}
+
+#piston_machine2-1,#piston_machine2-2,#piston_machine2-3,#piston_machine2-4{
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+   border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px;
+}
+
+#piston_machine2-4{
+  width: 80px;
+  height: 90px;
+}
+
+#piston_man2-1{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+  text-align: center;
+  height: 90px;
+  font-size: 19px;
+ background-color: rgba(251,243,225);
+  border: 1px solid rgb(219, 212, 212);
+ border-radius: 5px;
+}
+
+#piston_arrow{
+ border: none;
+ width: 150px;
+ font-size: 25px;
+ margin-left: 30px;
+ display: flex;
+ flex-direction: column;
+}
+
+#piston_arrow span{
+ border: none;
+ width: 150px;
+ font-size: 20px;
+ margin-left: 10px;
+}
+/* Row 5 Table */
+
+
+#piston_row5{
+  margin-left: -80px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: -4px;
+}
+#piston_row5-tbl {
+  margin-left: 90px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 16.5%;
+  height: 0%;
+  margin-top: 10px;
+}
+
+
+#piston_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  border-radius: 5px;
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 25px !important;
+}
+
+#piston_cell1{
+  background-color:rgba(2251,243,225) ;
+  border-radius: 5px;
+  width: 50px;
+}
+
+#piston_cell2{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#piston_cell3 td{
+  font-weight: bold;
+  padding: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 0, 0.51);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 25px;
+}
+
+#piston_cell4{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#piston_cell5 td{
+  font-weight: bold;
+  padding: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 0, 0.51);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 25px;
+}
+
+/* Data Table Row 6 */
+#piston_row6-tbl {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19%;
+  margin-top: -230px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 58%;
+  table-layout: fixed; /* ✅ This locks column widths */
+  
+
+}
+
+#piston_row6-tbl td {
+  /* border: 1px solid #piston_ccc;  */
+  width: 140px;      
+  height: 0px;         
+  padding: 1px;
+  word-wrap: break-word; 
+  border: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* 
+#piston_timestd1,#piston_timestd2,#piston_timestd3,#piston_timestd4,#piston_timestd5,#piston_timestd6,#piston_timestd7,#piston_timestd8,#piston_timestd9{
+  width: px;
+} */
+
+
+#piston_quality1data1,#piston_quality1data2,#piston_quality1data3,#piston_quality1data4,#piston_quality2data1,#piston_quality2data2,#piston_quality2data3,#piston_quality2data4,#piston_quality3data1,#piston_quality3data2,#piston_quality3data3,#piston_quality3data4,#piston_quality4data1,#piston_quality4data2,#piston_quality4data3,#piston_quality4data4{
+ width: 150px;
+}
+
+#piston_machine{
+  width: 240px !important;
+}
+tbody {
+  font-size: 20px !important;
+}
+
+#piston_line1,
+#piston_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 22px !important;
+  font-weight: bold;
+
+}
+
+/* Buttons
+#piston_btns {
+  display: flex;
+  flex-direction: column;
+  width: 4.piston_8%;
+  margin-left: 68%;
+  margin-top: -12.piston_9%;
+  gap: 10px;
+}
+
+#piston_btn1 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgb(5, 245, 213);
+} */
+
+/* #piston_btn3 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgb(163, 183, 11);
+}
+
+#piston_btn4 {
+  padding: 13px;
+  font-size: 12px;
+  background-color: rgba(165, 42, 42, 0.449);
+}
+ */
+
+
+
+/* Row 7 - Results */
+#piston_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-bottom: 8px;
+  text-align: center;
+  border-collapse: separate;
+  border-spacing: 0;  
+  overflow: hidden; 
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 20%;
+  border-radius: 10px;
+
+}
+
+#piston_row7{
+  padding-left: 40px;
+  margin-top: -13.5% ;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+#piston_result1,
+#piston_result3 {
+  width: 52%;
+  height: 45px !important;
+  font-size: 35px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#piston_result1{
+  font-size: 35px;
+}
+
+#piston_result3 {
+  background-color: rgba(0,192,192);
+  color: aliceblue;
+}
+
+#piston_result2{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    height: 150px;
+
+}
+
+#piston_result-img{
+  height: 124%;
+  width: 60%;
+}
+
+
+@media (max-width:1000px)  {
+ html {
+  font-size: 100%; /* 16px default */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin-top: 5px;
+}
+
+
+/* Header */
+header {
+  display: flex;
+ flex-direction: column;
+
+}
+
+header h2 {
+  font-size: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -45%;
+  margin-top: 3px;
+  font-weight: bold;
+}
+
+/* Titles */
+#piston_tiei1 {
+  margin-top: -50px;
+  margin-left: 60px;
+  width: 20px;
+  height: 25px;
+}
+
+#piston_tiei2 {
+  margin-top: -27px;
+  margin-left: 30%;
+  width: 160px;
+  height: 35px;
+}
+
+#piston_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60%;
+  margin-top: -50px;
+  width: 10px !important ;
+  height: 10px !important;
+}
+
+#piston_settings{
+  width: 25px;
+  margin-left: 115px;
+}
+
+
+/* Dashboard Table */
+#piston_dashboard-table {
+  margin-top: 37px;
+  width: 90%;
+  margin-left: 4vw;
+  border: 0.05vw solid black;
+  display: flex;
+}
+
+/* Font sizes */
+#piston_ss1 {
+  font-size: 13px;
+  margin-top: 17px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+/* Table styles */
+table {
+  width: 88%;
+  margin-left: 40px;
+ 
+}
+
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+/* Row 1 container? */
+
+/* Boxes Styling */
+
+/* box1, #piston_shift-in */
+
+#piston_box1,
+#piston_shift-in {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* box3_4 */
+
+
+#piston_box2,
+#piston_kick-out {
+  padding: 3px;
+  font-size: 12px;
+
+}
+#piston_box2{
+  width: 30px;
+ 
+}
+#piston_kick-out {
+  width: 25px;
+  padding: 3px !important;
+
+}
+
+/* box11_12 */
+/* #piston_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#piston_box6 {
+  padding: 3px;
+  width: 85px;
+  font-size: 12px;
+}
+
+#piston_kick-in {
+  padding: 3px !important;
+  font-size: 12px;
+}
+
+/* box5_6 */
+
+#piston_box3 {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+   font-size: 18px;
+}
+
+#piston_shift-out {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180, 229, 162);
+  font-size: 1.6vw;
+}
+
+/* box7_8 */
+/* #piston_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#piston_box4 {
+  padding: 3px;
+  width: 130px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#piston_A-cycle {
+  padding: 3px;
+  width: 110px;
+  text-align: center;
+  font-size: 14px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#piston_box5 {
+  padding: 3px;
+  width: 120px;
+  font-size: 14px;
+  text-align: center;
+ 
+}
+
+#piston_S-pass {
+  padding: 3px;
+  width: 95px;
+  text-align: center;
+  font-size: 14px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+#piston_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#piston_layout{
+  margin-right: 1px;
+  margin-bottom: 30px;
+  font-size: 25px !important;
+  color: rgb(0,112,192);
+  font-style: italic;
+}
+
+#piston_top-box{
+  display: flex;
+  margin-left: -14%;
+  margin-top: -40px;
+}
+#piston_tpt{
+  font-weight: bold;
+  font-size: 12px;
+   margin-left: 10px !important;
+   margin-top: -15px !important;
+ 
+}
+
+#piston_tpt-data{
+  font-size: 8px !important;
+  margin-left: -100px !important;
+  padding: 4px;
+  margin-top: 0px !important;
+}
+
+#piston_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+/* Row 2 Table container */
+#piston_row2-tbl {
+  margin-left: 130%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -40px;
+  height: 10px;
+ 
+}
+
+#piston_row2-tbl .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0px !important;
+  padding: 0px 0 !important;
+  font-size: 10px !important;
+}
+
+.icon-box {
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.icon-box img {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+/* Chart or image containers */
+#piston_ch {
+  margin-left: 65%;
+  margin-top: 20px;
+  font-size: 10px;
+}
+
+#piston_ch-pic {
+  margin-left: 70%;
+  width: 13%;
+  height: 13%;
+}
+
+/* Row 3 - flex container */
+#piston_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -13%;
+  margin-left: -70px;
+ 
+}
+
+/* Man columns */
+#piston_man-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 60px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#piston_man1,#piston_man2,#piston_man3,#piston_man4{
+  width: 29px;
+  height: 29px;
+}
+
+#piston_man1{
+  margin-top: 10px !important;
+  margin-left: 8px !important;
+}
+
+
+/* Boxes inside row 3 */
+#piston_B-1,
+#piston_B-2,
+#piston_B-3,
+#piston_B-4,
+#piston_B-5 {
+  margin-top: 35px;
+  height: 25px;
+  width: 25px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_b1,#piston_b2,#piston_b3,#piston_b4,#piston_b5{
+  width: 20px;
+  height: 20px;
+  margin-top:2px !important;
+  margin-left: 2px !important;
+}
+
+/* Machines inside row 3 */
+#piston_machine1-1,
+#piston_machine1-2,
+#piston_machine1-3,
+#piston_machine1-4,
+#piston_machine1-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#piston_machine5,#piston_machine4{
+  margin-left: 8px !important;
+  margin-top: 4px !important;
+  width: 30px !important;
+  height: 25px;
+}
+#piston_machine3,#piston_machine2{
+   margin-left: 6px !important;
+  margin-top: 14px !important;
+  width: 30px;
+  height: 25px !important;
+}
+#piston_machine1{
+   margin-left: 8px !important;
+  margin-top: 24px !important;
+  width: 30px;
+  height: 25px !important;
+}
+
+
+/* Other men pistons */
+#piston_man-2,
+#piston_man-3,
+#piston_man-4 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 50px;
+  margin-top: 10px;
+ background-color: rgba(251,243,225);
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#piston_man2{
+  margin-left: 9px  !important;
+  margin-top: 10px !important;
+}
+
+#piston_man3{
+  margin-left: 9px !important;
+  margin-top: 1px !important;
+}
+#piston_man4{
+  margin-top: 11px !important;
+  margin-left: 11px !important;
+}
+/* manual dolly */
+
+#piston_md{
+  margin-top: -8%;
+  margin-left: 20px;
+}
+
+#piston_up{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 35px !important;
+  margin-bottom: 10px !important;
+}
+
+#piston_dolly{
+  margin-top: 20px !important;
+  padding: 10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+}
+#piston_down{
+  font-size: 20px !important;
+  line-height: 1 !important;
+  margin-left: 35px !important;
+  margin-top: 10px !important;
+}
+
+#piston_logic{
+  display: flex;
+  flex-direction: column;
+}
+
+#piston_flow-right{
+  margin-left:730px !important;
+  margin-top: -90px !important;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#piston_right-line{
+  margin-left: -55px !important;
+  font-size: 10px !important;
+  margin-top: -80px !important;
+}
+
+#piston_flow-left{
+  margin-top: -40px !important;
+  margin-left: 685px !important;
+  font-size: 10px;
+}
+
+#piston_left-line{
+  margin-top: -56px !important;
+  font-size: 10px !important;
+  margin-left: -55px !important;
+}
+
+/*flow direction*/
+#piston_fd1{
+  margin-left: -50px;
+  display: flex;
+ 
+}
+#piston_fd2{
+  display: flex;
+  flex-direction: row;
+}
+/* Row 4 - flex container */
+#piston_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -3%;
+  margin-left: -70px;
+}
+
+#piston_man2-1 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 55px;
+  text-align: center;
+  margin-left: 120px;
+  background-color: rgba(251,243,225);
+  font-size: 8px;
+  font-weight: bold;
+}
+
+#piston_B2-1,
+#piston_B2-2,
+#piston_B2-3,
+#piston_B2-4 {
+  height: 25px;
+  width: 25px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_b21,#piston_b22,#piston_b23{
+  width: 20px;
+  height: 20px;
+  margin-left: 2px !important;
+  margin-top: 2px !important;
+}
+
+#piston_b24{
+  margin-top: 2px !important;
+  padding: 2px !important;
+  font-size: 10px;
+  border: 1px solid orange !important;
+}
+
+#piston_machine2-1,
+#piston_machine2-2,
+#piston_machine2-3,
+#piston_machine2-4,
+#piston_machine2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 65px;
+  background-color: rgba(204,255,255);
+  font-size: 8px;
+  font-weight: bold;
+
+}
+
+#piston_machine21,#piston_machine22,#piston_machine23,#piston_machine24,#piston_machine25{
+  width: 35px;
+  height: 25px;
+  margin-left: 5px !important;
+  margin-top: 2px !important;
+  margin-bottom: 5px;
+
+}
+
+#piston_man2-2,
+#piston_man2-3 {
+  height: 30px;
+  width: 35px;
+background-color: rgba(251,243,225);
+font-weight: bold;
+}
+
+#piston_man2-4,
+#piston_man2-5 {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  text-align: center;
+  height: 55px;
+ background-color: rgba(251,243,225);
+ font-size: 8px;
+ font-weight: bold;
+}
+
+#piston_man21{
+  width: 29px;
+  height: 29px;
+  margin-top: 0px !important;
+  margin-left: 8px !important;
+  margin-bottom: -11px ;
+}
+
+#piston_man22{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#piston_man23{
+  width: 29px;
+  height: 29px;
+  margin-left: 3px !important;
+}
+
+#piston_man24{
+  width: 29px;
+  height: 29px;
+  margin-left: 8px !important;
+}
+
+#piston_man25{
+  width: 29px;
+  height: 29px;
+  margin-left: 7px !important;
+  margin-bottom: -5px !important;
+}
+
+#piston_downarrow{
+   height: 34px !important;
+   margin-top: 32px !important;
+   margin-left: -24px !important;
+}
+
+#piston_downarrow-img{
+  height: 34px;
+  width: 20px;
+
+}
+
+#piston_uparrow{
+  height: 66px;
+  margin-left: 3px !important;
+}
+
+#piston_uparrow-img{
+  width: 20px;
+  height: 66px;
+
+}
+
+/* Row 5 Table */
+
+#piston_row5{
+  margin-left: -12px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 155px;
+}
+#piston_row5-tbl {
+  margin-left: 20px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 0%;
+  margin-top: -150px;
+}
+
+#piston_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 10px;
+  padding-bottom: -2%;
+}
+
+#piston_cell1 td{
+  background-color:rgba(2251,243,225) ;
+  width: 20px;
+  font-size: 15px !important;
+  padding: 1px !important;
+}
+
+#piston_cell2 , #piston_cell4 {
+  font-weight: bold;
+  padding: 2px !important;
+
+  font-size: 15px !important;
+  margin-top: -5px !important;
+}
+
+#piston_cell3 , #piston_cell5 {
+  font-weight: bold;
+  padding: 10px !important;
+  height: 25px;
+  background-color: rgba(255, 255, 0, 0.51);
+    border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 17px !important;
+}
+
+
+/* ---------------- Row 6 Table ---------------- */
+#piston_row6-tbl {
+  margin-left: 22%;
+  margin-top: -150px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 56%;
+  table-layout: fixed;
+  
+}
+
+#piston_row6-tbl td {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  min-width: 50px;          
+  max-width: 80px;         
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  white-space: nowrap;          
+  word-wrap: break-word;
+} 
+
+#piston_line3 td,
+#piston_line4 td,
+#piston_line5 td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.5 !important;
+  height: 4px !important;   
+  font-size: 8px !important; 
+  vertical-align: middle;  
+}
+
+
+#piston_row6-tbl td#piston_std1,
+#piston_row6-tbl td#piston_dev {
+  width: 10px;        
+  max-width: 10px;    
+}
+
+#piston_time-stamp{
+  width: 5px;
+}
+
+#piston_line1 td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+tbody {
+  font-size: 8px;
+}
+
+#piston_line1,
+#piston_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+
+#piston_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75%;
+  margin-top: -13.8%;
+  text-align: center;
+ border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 16%;
+}
+
+#piston_row7{
+  padding-left: 0px;
+ margin-bottom: 10px;
+}
+
+#piston_result1,
+#piston_result3 {
+  width: 49%;
+  font-size: 10px;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  
+}
+#piston_result1{
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+#piston_result2{
+  border: 1px solid rgba(0, 0, 0, 0.178);
+}
+#piston_result3 {
+  background-color: rgba(0, 192, 192);
+  color: black;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+#piston_result-img{
+  height: 92px;
+  width: 92px;
+}
+
+}
+
+@media(max-width:1600px) and (min-width:1001px){
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+
+#piston_head1 header h2 {
+  font-size: 38px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -36.5% !important;
+  margin-top: -80px !important;
+}
+
+#piston_menu{
+  margin-top: -30px !important;
+  margin-left: -90% !important;
+  cursor: pointer;
+}
+
+/* Titles */
+#piston_tiei1 {
+  margin-top: -75px;
+  margin-left: 180px;
+  width: 40px;
+  height: 45px;
+}
+
+#piston_tiei2 {
+  margin-top: -45px;
+  margin-left: 30%;
+  width: 200px;
+  height: 50px;
+}
+
+#piston_tiei3 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 86%;
+  margin-top: -60px;
+}
+
+
+/* Dashboard Table */
+#piston_dashboard-table {
+  margin-top: 10px;
+  width: 90%;
+  height: 70px;
+  margin-left: 80px;
+  border: 1px solid black;
+  padding: 0px;
+  display: flex;
+}
+
+/* Font sizes */
+#piston_ss1 {
+   font-size: 26px;
+  margin-top: 23px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+/* Table styles */
+table {
+  /* Removed display:flex for proper table behavior */
+  width: 88%;
+  margin-left: 50px;
+ 
+}
+
+#piston_row1 td{
+  border: 1px solid rgba(0, 0, 0, 0.411);
+}
+
+#piston_row1-sub td{
+  border: 1px solid rgba(0, 0, 0, 0.486);
+}
+td {
+  border: 1px solid black;
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+#piston_box1,
+#piston_shift-in {
+   padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 30px;
+}
+
+#piston_box2,
+#piston_kick-out {
+  padding: 5px;
+  font-size: 18px;
+
+}
+#piston_box2{
+  width: 30px;
+ 
+}
+#piston_kick-out {
+  width: 25px;
+
+}
+
+/* box11_12 */
+/* #piston_box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#piston_box6 {
+  padding: 5px;
+  width: 85px;
+  font-size: 18px;
+}
+
+#piston_kick-in {
+  padding: 5px;
+  font-size: 25px;
+}
+
+/* box5_6 */
+
+#piston_box3 {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 36px;
+}
+
+#piston_shift-out {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  background-color: rgba(180,229,162);
+  font-size: 30px;
+}
+
+/* box7_8 */
+/* #piston_box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#piston_box4 {
+  padding: 5px;
+  width: 130px;
+  font-size: 24px;
+  text-align: center;
+}
+
+#piston_A-cycle {
+  padding: 5px;
+  width: 110px;
+  text-align: center;
+  font-size: 35px;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+/* box9_10 */
+
+
+#piston_box5 {
+  padding: 5px;
+  width: 120px;
+  font-size: 24px;
+ 
+}
+
+#piston_S-pass {
+  padding: 5px;
+  width: 95px;
+  text-align: center;
+  font-size: 32px;
+  background-color: rgba(180,229,162);
+}
+
+/* Row 2 */
+#piston_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#piston_tpt{
+  font-weight: bold;
+  font-size: 20px;
+ 
+}
+
+#piston_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#piston_top-box{
+  margin-left: -3%;
+  margin-top: -35px;
+}
+
+/* Row 2 Table container */
+#piston_row2-tbl {
+  margin-left: 5%;
+  display: flex;
+  margin-top: -50px;
+ 
+}
+
+#piston_row2-tbl,
+#piston_row2-tbl td {
+  border: none;
+}
+
+
+#piston_row2-tbl .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0px !important;
+  padding: 0px 0 !important;
+}
+
+#piston_row2-tbl  .legend-item span{
+  font-size: 12px !important;
+}
+
+#piston_row2-tbl  .legend-item .icon-box {
+  width: 24px !important;
+  height: 24px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+#piston_row2-tbl  .legend-item .icon-box img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+#piston_ch {
+  margin-left: 70%;
+  margin-top: -60px;
+}
+
+#piston_ch-pic {
+  margin-left: 70%;
+  margin-top: -10px;
+  width: 22%;
+  height: 22%;
+}
+
+#piston_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -25%;
+  margin-left: 20%;
+}
+
+
+#piston_B-1,
+#piston_B-2,
+#piston_B-3,
+#piston_B-4{
+  margin-top: 50px;
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+}
+
+
+#piston_machine1-2,
+#piston_machine1-3,
+#piston_machine1-4,
+#piston_machine1-1 {
+  display: flex;
+  flex-direction: column;
+  width: 75px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+}
+
+
+#piston_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+  text-align: center;
+  height: 90px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+}
+
+
+#piston_md{
+  margin-top: -13%;
+  margin-left: 13%;
+}
+
+#piston_dolly{
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 10px;
+}
+
+#piston_logic{
+  display: flex;
+}
+
+#piston_right-line{
+  margin-left: 400px;
+}
+
+#piston_left-line{
+  margin-top: -50px;
+}
+
+#piston_fd2{
+  display: flex;
+  flex-direction: column;
+  margin-top: 90px;
+  margin-left: -1%;
+}
+
+#piston_fd1{
+  margin-top: 90px;
+  margin-left: -24%;
+}
+
+.piston_arrow-line{
+  margin-top: -225px !important;
+  margin-left: 340px;
+}
+
+.piston_arrow3{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow2{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow1{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrowlinedata1{
+  margin-left: 370px;
+}
+
+#piston_arrow3data{
+  width: 45px;
+  margin-left: 0px;
+  border: none;
+}
+
+#piston_arrow2data{
+  width: 45px;
+  margin-left: 190px;
+  border: none;
+}
+
+#piston_arrow1data{
+  width: 45px;
+  margin-left: 190px;
+  border: none;
+}
+
+
+.piston_arrow-line2{
+  margin-top: -10px !important;
+  margin-left: 350px;
+}
+
+.piston_arrow6{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow7{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow8{
+ font-size: 20px;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrowlinedata2{
+  margin-left: 415px;
+  margin-top: 40px;
+}
+
+#piston_arrow6data{
+  width: 45px;
+  margin-left: 0px;
+  border: none;
+}
+
+#piston_arrow7data{
+  width: 45px;
+  margin-left: 130px;
+  border: none;
+}
+
+#piston_arrow8data{
+  width: 45px;
+  margin-left: 170px;
+  border: none;
+}
+
+
+#piston_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -7%;
+  margin-left: 20%;
+}
+
+#piston_B2-1{
+  height: 60px;
+  width: 75px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_b21{
+  width: 48px;
+  margin-left: 2px;
+}
+
+#piston_machine2-1,#piston_machine2-2,#piston_machine2-3,#piston_machine2-4{
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  text-align: center;
+  height: 110px;
+  background-color: rgba(204,255,255);
+}
+
+#piston_machine2-4{
+  width: 80px;
+  height: 90px;
+}
+
+#piston_man2-1{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+  text-align: center;
+  height: 90px;
+ background-color: rgba(251,243,225);
+ font-size: 15px;
+}
+
+#piston_arrow{
+ border: none;
+ width: 150px;
+ font-size: 25px;
+ margin-left: 30px;
+ display: flex;
+ flex-direction: column;
+}
+
+#piston_arrow span{
+ border: none;
+ width: 150px;
+ font-size: 20px;
+ margin-left: 10px;
+}
+
+#piston_row5{
+  margin-left: -80px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: -4px;
+}
+#piston_row5-tbl {
+  margin-left: 90px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 16.5%;
+  height: 0%;
+  margin-top: 10px;
+}
+
+
+#piston_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90%;    
+  margin-left: 5%;
+  margin-top: 9px !important;
+}
+
+#piston_cell1{
+  background-color:rgba(2251,243,225) ;
+  width: 50px;
+}
+
+#piston_cell2{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#piston_cell3{
+  font-weight: bold;
+  padding: 40px !important;
+  height: 40px !important;
+  background-color: rgba(255, 255, 0, 0.51);
+    border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 22px;
+}
+
+
+#piston_cell4{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#piston_cell5{
+  font-weight: bold;
+  padding: 40px !important;
+  height: 40px !important;
+  background-color: rgba(255, 255, 0, 0.51);
+    border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 22px;
+}
+
+
+
+#piston_row6-tbl {
+  display: flex;
+  flex-direction: column;
+  margin-left: 19%;
+  margin-top: -230px;
+  text-align: center;
+  border-collapse: collapse;
+  width: 58%;
+  table-layout: fixed;
+}
+
+#piston_row6-tbl td {
+  /* border: 1px solid #piston_ccc;  */
+ width: 140px;      
+  height: 0px;         
+  padding: 1px;
+  word-wrap: break-word; 
+  border: 1px solid rgba(0, 0, 0, 0.205);
+}
+/* 
+#piston_timestd1,#piston_timestd2,#piston_timestd3,#piston_timestd4,#piston_timestd5,#piston_timestd6,#piston_timestd7,#piston_timestd8,#piston_timestd9{
+  width: px;
+} */
+
+#piston_quality1data1,#piston_quality1data2,#piston_quality1data3,#piston_quality1data4,#piston_quality2data1,#piston_quality2data2,#piston_quality2data3,#piston_quality2data4,#piston_quality3data1,#piston_quality3data2,#piston_quality3data3,#piston_quality3data4,#piston_quality4data1,#piston_quality4data2,#piston_quality4data3,#piston_quality4data4{
+ width: 150px;
+}
+
+tbody {
+  font-size: 17px;
+}
+
+#piston_line1,
+#piston_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 15px !important;
+  font-weight: bold;
+}
+
+#piston_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 74%;
+  margin-bottom: 8px;
+  text-align: center;
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 20%;
+}
+
+#piston_row7{
+  padding-left: 40px;
+    margin-top: -14% ;
+   margin-left: -80px;
+    margin-right: -80px;
+}
+
+#piston_result1,
+#piston_result3 {
+  width: 52%;
+  height: 30px !important;
+  font-size: 28px !important;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+
+}
+
+#piston_result1{
+  font-size: 32px;
+}
+
+#piston_result3 {
+  background-color: rgba(0,192,192);
+  color: aliceblue;
+}
+
+#piston_result2{
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    height: 160px;
+
+}
+
+#piston_result-img{
+  height: 105%;
+  width: 60%;
+}
+
+}
+
+
+@media (min-width: 766px) and (max-width:999px){
+ html {
+  font-size: 100%;
+}
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
+  margin-top: 5px;
+}
+
+header {
+  display: flex;
+ flex-direction: column;
+}
+
+#piston_head1 header h2 {
+  font-size: 30px !important;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: -25% !important;
+  margin-top: 30px !important;
+  font-weight: bold;
+}
+
+#piston_topic{
+  font-size: 30px !important;
+}
+
+#piston_menu{
+  margin-left: -80% !important;
+  margin-right: 0px !important;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  display: none !important;
+}
+
+#piston_tiei1 {
+  margin-top: -60px;
+  margin-left: 290px;
+  width: 25px;
+  height: 30px;
+}
+
+#piston_tiei2 {
+  margin-top: -35px;
+  margin-left: 58%;
+  width: 260px;
+  height: 40px;
+}
+
+#piston_live{
+  margin-top: -30px;
+  margin-left: 55%;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  display: piston;
+}
+
+#piston_tiei3 {
+  display: flex;  
+  flex-direction: column;
+  margin-left: 80%;
+  margin-top: -50px !important;
+  width: 3px !important ;
+  height: 1px !important;
+  display: piston;
+}
+
+#piston_live, #piston_tiei3 {
+  display: none !important;
+}
+
+#piston_settings{
+  width: 5px !important;
+  margin-left: 135px;
+}
+#piston_dashboard-table {
+  margin-top: 4px;
+  width: 90%;
+  height: 43px !important;
+  margin-left: 4vw;
+  border: 0.05vw solid black;
+  display: flex;
+}
+
+#piston_ss1 {
+  font-size: 13px;
+  margin-top: 17px;
+  margin-left: 1px;
+  margin-right: -27px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 7px;
+  word-wrap: none;
+}
+
+table {
+  width: 88%;
+  margin-left: 40px;
+ 
+}
+
+td {
+  border: 1px solid rgb(0, 0, 0);
+   /* border: 1px solid rgba(0, 0, 0, 0.103); */
+ 
+}
+
+
+#piston_box1,
+#piston_shift-in {
+  padding: -8px !important;
+  width: 95px !important;
+  text-align: center;
+  font-size: 24px !important;
+}
+
+#piston_box2,
+#piston_kick-out {
+  padding: 1px !important;
+  font-size: 12px !important;
+
+}
+#piston_box2{
+  width: 30px !important;
+ 
+}
+#piston_kick-out {
+  width: 25px;
+  padding: 1px !important;
+
+}
+
+/* box11_12 */
+/* #box11_12 {
+  font-size: 18px;
+  padding: 5px;
+} */
+
+#piston_box6 {
+  padding: 1px !important;
+  width: 85px !important;
+  font-size: 12px !important;
+}
+
+#piston_kick-in {
+  padding: 1px !important;
+  font-size: 12px !important;
+}
+
+#piston_box3 {
+  padding: -1px !important;
+  width: 95px !important;
+  text-align: center;
+   font-size: 24px !important;
+}
+
+#piston_shift-out {
+  padding: -1px !important;
+  width: 95px !important;
+  text-align: center;
+  background-color: rgba(180, 229, 162);
+  font-size: 24px !important;
+}
+
+/* box7_8 */
+/* #box4 {
+  font-size: 20px;
+  padding: 5px;
+} */
+
+#piston_box4 {
+  padding: -1px !important;
+  width: 130px !important;
+  font-size: 14px !important;
+  text-align: center;
+}
+
+#piston_A-cycle {
+  padding: -1px !important;
+  width: 110px !important;
+  text-align: center;
+  font-size: 25px !important;
+ background-color: rgba(251,243,225);
+  color: red;
+}
+
+#piston_box5 {
+  padding: -1px !important;
+  width: 120px !important;
+  font-size: 14px !important;
+  text-align: center;
+ 
+}
+
+#piston_S-pass {
+  padding: -1px !important;
+  width: 95px !important;
+  text-align: center;
+  font-size: 25px !important;
+  background-color: rgba(180,229,162);
+}
+
+#piston_row2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#piston_layout{
+  margin-right: -5px;
+  font-size: 25px !important;
+  margin-top: 20px !important;
+
+}
+
+#piston_top-box{
+  display: flex;
+  margin-left: -14%;
+  margin-top: -45px !important;
+}
+
+#piston_tpt{
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 10px !important;
+  margin-top: -15px !important;
+ 
+}
+
+#piston_tpt-data{
+  font-size: 9px !important;
+  margin-left: -112px !important;
+  padding: 4px;
+  margin-top: 5px !important;
+}
+
+#piston_tpt-data:hover{
+  cursor: pointer;
+  border: none;
+  border-color: white;
+}
+
+#piston_row2-tbl {
+  margin-left: 118%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -45px !important;
+  height: 0px;
+ 
+}
+
+#piston_row2-tbl .legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0px !important;
+  padding: 0px 0 !important;
+  font-size: 10px !important;
+}
+
+#piston_row2-tbl .legend-item span{
+  font-size: 8px !important;
+}
+
+#piston_row2-tbl .legend-item .icon-box {
+  width: 20px !important;
+  height: 20px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+#piston_row2-tbl .legend-item .icon-box img {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Different background colors */
+.machine-bg {
+  background-color: rgba(204,255,255);
+}
+
+.manual-bg {
+  background-color: rgba(251,243,225);
+}
+
+.buffer-bg {
+  background-color: rgba(180,229,162);
+}
+
+#piston_machine_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 4px;
+}
+
+#piston_man_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 4px;
+}
+
+#piston_b_img{
+  width: 15px !important;
+  height: 0px !important;
+  border-radius: 4px;
+}
+
+#piston_ch {
+  margin-left: 70%;
+  margin-top: 4%;
+  font-size: 15px;
+}
+
+#piston_ch-pic {
+  margin-top: 10px;
+  margin-left: 73%;
+  width: 18%;
+  height: 18%;
+}
+
+#piston_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -21% !important;
+  margin-left: 200px;
+ 
+}
+
+#piston_machine1-6,#piston_machine1-5,#piston_man-4,#piston_man-5{
+  height: 50px !important;
+  margin-top: 10px;
+}
+
+/* Man columns */
+#piston_man-1 {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 50px !important;
+  font-size: 8px;
+  text-align: center;
+ background-color: rgba(251,243,225);
+ border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+  margin-left: 0px !important;
+  margin-top: 10px;
+}
+
+#piston_B-1,
+#piston_B-2,
+#piston_B-3,
+#piston_B-4,#piston_B-5 {
+  height: 25px !important;
+  width: 25px !important;
+  background-color: rgba(180,229,162);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+  margin-top: 35px;
+}
+
+#piston_b1,#piston_b2,#piston_b3,#piston_b4,#piston_b5{
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 2px !important;
+  margin-top: 2px !important;
+}
+/* Machines inside row 3 */
+#piston_machine1-1,
+#piston_machine1-2,
+#piston_machine1-3,
+#piston_machine1-4{
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  font-size: 8px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+   border-radius: 5px;
+}
+
+#piston_img_machine1-4{
+  width: 28px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#piston_img_machine1-3{
+  width: 28px;
+  height: 28px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#piston_img_machine1-2{
+  width: 28px;
+  height: 28px;
+  margin-top: 1px !important;
+  margin-left: 5px;
+}
+
+#piston_img_machine1-1{
+  width: 28px;
+  height: 28px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#piston_img_machine2-1{
+  width: 28px;
+  height: 28px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+#piston_img_machine2-2{
+  width: 28px;
+  height: 28px;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+#piston_img_machine2-3{
+  width: 28px;
+  height: 28px;
+  margin-left: 13px;
+  margin-top: 5px;
+}
+
+#piston_img_machine2-4{
+  width: 28px;
+  height: 28px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+#piston_man1{
+  margin-top: 5px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man2{
+  margin-top: 13px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+
+#piston_man3{
+  margin-top: 13px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+
+#piston_man4{
+  margin-top: -2px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man5{
+  margin-top: 6px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man21{
+  margin-top: 0px !important;
+  margin-left:17px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man22{
+  margin-top: 0px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man23{
+  margin-top: 0px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man24{
+  margin-top: 10px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_man25{
+  margin-top: -2px !important;
+  margin-left:10px !important;
+  width: 20px;
+  height: 20px;
+}
+
+#piston_man26{
+  margin-top: 0px !important;
+  margin-left:8px !important;
+  width: 25px;
+  height: 25px;
+}
+
+#piston_img_machine1-4{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 6px;
+  margin-top: 9px;
+}
+
+#piston_img_machine1-3{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 6px;
+  margin-top: 9px;
+}
+
+#piston_img_machine1-2{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 6px;
+  margin-top: 9px;
+}
+
+#piston_img_machine1-1{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 6px;
+  margin-top: 20px;
+}
+
+#piston_img_machine2-1{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 16px;
+  margin-top: 17px;
+}
+
+#piston_img_machine2-2{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 16px;
+  margin-top: 17px;
+}
+
+#piston_img_machine2-3{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 12px;
+  margin-top: 7px;
+}
+
+#piston_img_machine2-4{
+  width: 30px !important;
+  height: 30px !important;
+  margin-left: 6px;
+  margin-top: 7px;
+}
+
+#piston_md{
+  margin-top: -13% !important;
+  margin-left: 140px;
+  border-radius: 10px;
+}
+#piston_up{
+font-size: 30px !important;
+  line-height: 1 !important;
+  margin-left: 40px !important;
+  margin-bottom: 10px !important;
+}
+
+#piston_down{
+    font-size: 30px !important;
+  line-height: 1 !important;
+  margin-left: 40px !important;
+  margin-top: 10px !important;
+}
+
+#piston_dolly{
+  margin-top: 20px !important;
+  padding: 10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  border-radius: 10px;
+}
+
+#piston_logic{
+  display: flex;
+  flex-direction: column;
+}
+
+#piston_flow-right{
+  margin-left:730px !important;
+  margin-top: -90px !important;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#piston_right-line{
+  margin-left: -65px !important;
+  font-size: 10px !important;
+  margin-top: -85px !important;
+}
+
+#piston_flow-left{
+  margin-top: -45px !important;
+  margin-left: 680px !important;
+  font-size: 10px;
+}
+
+#piston_left-line{
+  margin-top: -60px !important;
+  font-size: 10px !important;
+  margin-left: -61px !important;
+}
+
+#piston_fd1{
+  margin-left: -170px !important;
+  display: flex;
+  margin-top: -20px !important;
+  font-size: 10px;
+ 
+}
+#piston_fd2{
+  display: flex;
+  flex-direction: row;
+  margin-top: 2% !important;
+  font-size: 10px;
+  margin-left: -120px !important;
+}
+
+.piston_arrow-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -110px !important;
+    margin-left: 250px;
+}
+/* .piston_arrow1c{
+  margin-left: -10px !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+.piston_arrow1b{
+  margin-left: -10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+.piston_arrow1a{
+  margin-left: -10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+ */
+
+.piston_arrow1{
+ margin-left: -10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+
+.piston_arrow2{
+ margin-left: -10px !important;
+  font-size: 9px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+/* 
+.piston_arrow3a{
+ margin-left: -10px !important;
+  font-size: 9px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+} */
+
+.piston_arrow3{
+ margin-left: -10px !important;
+  font-size: 8px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+/* .piston_arrow4{
+ margin-left: -10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+}
+.piston_arrow5{
+ margin-left: -10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: rgba(102, 99, 99, 0.733) !important;
+} */
+
+.piston_arrow6{
+  font-size: 10px !important;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.piston_arrow7{
+  font-size: 9px !important;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+.piston_arrow8{
+  font-size: 9px !important;
+  font-weight: bold;
+  color: rgba(102, 99, 99, 0.733);
+}
+
+.piston_arrow-line2{
+  font-size: 20px;
+  margin-left: 240px !important;
+  margin-right: 0px;
+  margin-top: -1% !important;
+}
+
+
+.piston_arrowlinedata1{
+  margin-left: 220px;
+  margin-top: -5px !important;
+}
+
+
+#piston_arrow8data{
+  width: 35px !important;
+  margin-left: 70px !important;
+  border: none;
+  text-align: center;
+  font-size: 10px !important;
+}
+
+#piston_arrow7data{
+  width: 35px !important;
+  margin-left: 100px !important;
+  border: none;
+  text-align: center;
+  font-size: 10px !important;
+}
+
+
+#piston_arrow3data{
+  width: 35px !important;
+  margin-left: 20px !important;
+  border: none;
+  text-align: center;
+  font-size: 10px !important;
+  }
+
+#piston_arrow2data{
+  width: 35px !important;
+  margin-left: 80px !important;
+  border: none;
+  text-align: center;
+  font-size: 10px !important;
+}
+
+#piston_arrow1data{
+  width: 35px;
+  margin-left: 95px;
+  border: none;
+  text-align: center;
+  font-size: 10px;
+}
+
+.piston_arrowlinedata2{
+  margin-left: 250px;
+  margin-top: 22px !important;
+}
+
+/* Row 4 - flex container */
+#piston_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: -35px !important;
+  margin-left: 200px;
+}
+
+#piston_machine2-1,
+#piston_machine2-2 {
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 60px !important;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+   border-radius: 5px;
+}
+
+#piston_machine2-3{
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+   border-radius: 5px;
+}
+
+#piston_machine2-4 {
+  font-size: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  text-align: center;
+  height: 60px;
+  background-color: rgba(204,255,255);
+  border: 1px solid rgb(219, 212, 212);
+   border-radius: 5px;
+}
+
+#piston_B2-1 {
+  height: 25px !important;
+  width: 25px !important;
+  background-color: rgba(180,229,162);
+  border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+  margin-top: 35px;
+  margin-top: 0px !important;
+}
+
+#piston_b21{
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 2px !important;
+  margin-top: 2px !important;
+}
+
+#piston_b24{
+  height: 10px !important;
+  width: 12px !important;
+  margin-top: 2px !important;
+  font-size: 12px;
+  margin-left: 1px !important;
+}
+
+
+#piston_man2-1{
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  font-size: 8px;
+  text-align: center;
+  height: 50px;
+ background-color: rgba(251,243,225);
+ border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px;
+  margin-left: 0px !important;
+}
+
+#piston_arrow{
+ border: none;
+ width: 150px;
+ font-size: 17px;
+ margin-left: 30px;
+ display: flex;
+ flex-direction: column;
+}
+
+#piston_arrow span{
+ border: none;
+ width: 150px;
+ font-size: 13px;
+ margin-left: 0px;
+}
+
+
+#piston_row5{
+  margin-left: -12px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  width: 12px;
+  margin-top: 155px;
+}
+#piston_row5-tbl {
+  margin-left: 20px;
+  font-size: 30px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin-top: -150px;
+}
+
+#piston_lastrow{
+  border: 1px solid rgba(131, 128, 128, 0.705);
+  width: 90% ;    
+  margin-left: 5%;
+  margin-top: 5px !important;
+  padding-bottom: -2%;
+}
+
+#piston_row5-tbl #piston_cell1 td{
+  background-color:rgba(2251,243,225) ;
+  font-size: 13px !important;
+  height: 25px !important;
+  padding: 2px !important;
+   white-space: nowrap; 
+}
+
+#piston_cell2 td, #piston_cell4 td{
+  font-weight: bold;
+  padding: 2px !important;
+  font-size: 12px !important;
+  margin-top: -5px !important;
+  padding-right: 2px !important;
+}
+
+#piston_cell3 td, #piston_cell5 td {
+  font-weight: bold;
+  padding: 5px !important;
+  height: 10px !important;
+  background-color: rgba(255, 255, 0, 0.51);
+    border: 1px solid rgb(219, 212, 212);
+  border-radius: 5px !important;
+  font-size: 12px !important;
+}
+
+
+#piston_row6-tbl {
+  margin-left: 15.5% !important;
+  margin-top: -150px !important;
+  text-align: center;
+  border-collapse: collapse;
+  width: 63% !important;
+  table-layout: fixed;
+  
+}
+
+#piston_row6-tbl td {
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  min-width: 50px !important;          
+  max-width: 80px !important;         
+  overflow: hidden;         
+  text-overflow: ellipsis;  
+  white-space: nowrap;          
+  word-wrap: break-word;
+} 
+
+
+
+#piston_line3 td,
+#piston_line4 td,
+#piston_line5 td,#piston_line6 td,
+#piston_line7 td,
+#piston_line8 td,#piston_line9 td,
+#piston_line10 td,
+#piston_line11 td,#piston_line12 td,#piston_line13 td {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  line-height: 1.5 !important;
+  height: 4px !important;  
+  font-size: 8px !important; 
+  vertical-align: middle;    
+}
+
+#piston_std1,
+#piston_dev {
+  width: 2% !important;
+  min-width: 2% !important;   /* 🔥 important */
+  max-width: 2% !important;
+}
+
+#piston_line1 td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+tbody {
+  font-size: 8px !important;
+}
+
+#piston_line1,
+#piston_line2 {
+  background-color: rgba(173, 216, 230, 0.61);
+  font-size: 10px !important;
+  font-weight: bold;
+}
+
+
+#piston_result {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75.8% !important;
+  margin-top: -11.5% !important;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  width: 16%;
+}
+
+#piston_row7{
+padding-left: 0px;
+margin-bottom: 5px !important;
+margin-top: -30px !important;
+}
+
+#piston_result1,
+#piston_result3 {
+  width: 49%;
+  font-size: 15px !important;
+  height: 18px !important;
+  background-color: rgba(46, 177, 46, 0.703);
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  
+}
+#piston_result1{
+  font-size: 14px;
+  padding-bottom: 4px;
+}
+
+#piston_result2{
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  height: 50px !important;
+}
+#piston_result3 {
+  background-color: rgba(0, 192, 192);
+  color: black;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+#piston_result3 {
+  pointer-events: none;
+}
+
+#piston_result-img{
+  height: 95px;
+  width: 95px;
+}
+
+}
+

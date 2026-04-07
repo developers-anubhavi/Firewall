@@ -1,0 +1,505 @@
+.piston_live_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.piston_live_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.piston_live_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#piston_live_title{
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 33%;
+    color: rgb(10, 77, 102);
+}
+
+
+/* Row 3 - flex container */
+#piston_live_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-left: 21%;
+ 
+}
+
+/* Boxes inside row 3 */
+#piston_live_B-1,
+#piston_live_B-2,
+#piston_live_B-3,
+#piston_live_B-4{
+  margin-top: 70px;
+  height: 85px;
+  width: 100px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_live_b1,#piston_live_b2,#piston_live_b3,#piston_live_b4{
+   height: 60px;
+  width: 73px;
+}
+
+/* Machines inside row 3 */
+
+#piston_live_machine1-2,
+#piston_live_machine1-3,
+#piston_live_machine1-4,
+#piston_live_machine1-1 {
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  text-align: center;
+  height: 155px;
+  background-color: rgba(204,255,255);
+  font-size: 25px;
+}
+
+/* Other men blocks */
+#piston_live_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 115px;
+  text-align: center;
+  height: 125px;
+  margin-top: 30px;
+  font-size: 25px;
+ background-color: rgba(251,243,225);
+}
+
+#piston_live_man1{
+  width: 55px;
+  height: 55px;
+  margin-left: 30px !important;
+}
+#piston_live_boxrow1{
+    margin-top: 0%;
+    margin-left: 27.3% !important;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#piston_live_boxrow1_1{
+  width: 110px;
+}
+
+#piston_live_boxrow1_2{
+  width: 110px;
+}
+
+#piston_live_boxrow1_3{
+  width: 110px;
+}
+
+#piston_live_boxrow1_4{
+  width: 110px;
+}
+
+#piston_live_boxrow2_1{
+  width: 145px;
+}
+
+#piston_live_boxrow2_2{
+  width: 145px;
+}
+
+#piston_live_boxrow2_3{
+  width: 140px;
+}
+
+#piston_live_boxrow2_4{
+  width: 125px;
+}
+
+#piston_live_boxrow2{
+    margin-top: 5%;
+    margin-left: 27.3%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.piston_engineBox {
+  width: 117px;
+  height: 40px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.piston_engineNo {
+  background-color: rgba(6, 72, 130); 
+  color: whitesmoke;
+  padding: 2px;
+  text-align: center;
+  height: 50%;
+}
+
+.piston_engineCode {
+  background-color: white; 
+  color: rgba(6, 72, 130);
+  font-weight: bolder;
+  padding: 2px;
+  height: 50%;
+  text-align: center;
+}
+
+/* Row 4 - flex container */
+#piston_live_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+  margin-left: 21%;
+}
+
+#piston_live_B2-1{
+  height: 85px;
+  width: 100px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_live_b21{
+  width: 73px;
+  height: 60px;
+  margin-left: 2px;
+}
+
+#piston_live_machine2-1,#piston_live_machine2-2,#piston_live_machine2-3,#piston_live_machine2-4{
+  display: flex;
+  flex-direction: column;
+  width: 145px;
+  text-align: center;
+  height: 145px;
+  font-size: 25px;
+  background-color: rgba(204,255,255);
+}
+
+#piston_live_machine2-4{
+  width: 130px;
+  height: 125px;
+}
+
+#piston_live_man2-1{
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  text-align: center;
+  height: 115px;
+  font-size: 22px;
+ background-color: rgba(251,243,225);
+}
+
+#piston_live_man21{
+  width: 55px;
+  height: 55px;
+}
+
+
+#piston_live_arrow{
+ border: none;
+ width: 150px;
+ font-size: 32px;
+ margin-left: 30px;
+ display: flex;
+ flex-direction: column;
+}
+
+#piston_live_arrow span{
+ border: none;
+ width: 150px;
+ font-size: 26px;
+ margin-left: 10px;
+}
+@media(max-width:1600px) and (min-width:1001px){
+  .piston_live_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.piston_live_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.piston_live_close_btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#piston_title{
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: -30px !important;
+    margin-left: 37% !important;
+    color: rgb(10, 77, 102);
+}
+
+/* Row 3 - flex container */
+#piston_live_row3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+  margin-left: 20%;
+ 
+}
+
+/* Boxes inside row 3 */
+#piston_live_B-1,
+#piston_live_B-2,
+#piston_live_B-3,
+#piston_live_B-4{
+  margin-top: 60px;
+  height: 70px !important;
+  width: 80px !important;
+  background-color: rgba(180,229,162);
+}
+
+#piston_live_b1,
+#piston_live_b2,
+#piston_live_b3,
+#piston_live_b4{
+  margin-top: 5px !important;
+  margin-left: 5px !important;
+}
+
+/* Machines inside row 3 */
+
+#piston_live_machine1-2,
+#piston_live_machine1-3,
+#piston_live_machine1-4,
+#piston_live_machine1-1 {
+  display: flex;
+  flex-direction: column;
+  width: 95px !important;
+  text-align: center;
+  height: 130px !important;
+  background-color: rgba(204,255,255);
+}
+
+/* Other men blocks */
+#piston_live_man-1{
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  text-align: center;
+  height: 110px;
+  margin-top: 20px;
+ background-color: rgba(251,243,225);
+}
+
+#piston_live_man1{
+  margin-top: 0px !important;
+  margin-left: 20px !important;
+}
+
+
+#piston_live_boxrow1{
+    margin-top: 0%;
+    margin-left: 27% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+#piston_live_boxrow2{
+    margin-top: 4%;
+    margin-left: 27% !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.piston_engineBox {
+  width: 90px;
+  /* margin-left: -10px !important; */
+  height: 30px;
+  margin: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  overflow: hidden;
+}
+
+.piston_engineNo {
+  background-color: rgba(6, 72, 130); 
+  color: whitesmoke;
+  padding: 2px;
+  height: 50%;
+}
+
+.piston_engineCode {
+  background-color: white;
+  color: rgba(6, 72, 130);
+  font-weight: bolder;
+  padding: 2px;
+  height: 50%;
+  text-align: center;
+}
+
+#piston_live_boxrow1_1{
+  width: 100px;
+}
+
+
+#piston_live_boxrow1_2{
+  margin-left: 75px !important;
+  width: 100px;
+}
+
+#piston_live_boxrow1_3{
+  margin-left: 180px !important;
+  width: 100px;
+}
+
+#piston_live_boxrow1_4{
+  margin-left: -4px !important;
+  width: 100px;
+}
+
+#piston_live_boxrow2_1{
+  width: 130px;
+}
+
+#piston_live_boxrow2_2{
+  margin-left: 135px !important;
+    width: 130px;
+}
+
+#piston_live_boxrow2_3{
+  margin-left: 0px !important;
+    width: 130px;
+}
+
+#piston_live_boxrow2_4{
+  margin-left: 0px !important;
+    width: 100px;
+}
+
+
+
+/* Row 4 - flex container */
+#piston_live_row4 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+  margin-left: 20%;
+}
+
+#piston_live_B2-1{
+  height: 70px;
+  width: 80px;
+  background-color: rgba(180,229,162);
+}
+
+#piston_live_b21{
+  width: 70px;
+  height: 60px;
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+#piston_live_machine2-1,#piston_live_machine2-2,#piston_live_machine2-3,#piston_live_machine2-4{
+  display: flex;
+  flex-direction: column;
+  width: 130px;
+  text-align: center;
+  height: 130px;
+  background-color: rgba(204,255,255);
+}
+
+#piston_live_machine2-4{
+  width: 100px;
+  height: 110px;
+}
+
+#piston_live_man2-1{
+  display: flex;
+  flex-direction: column;
+  width: 135px;
+  text-align: center;
+  height: 110px;
+ background-color: rgba(251,243,225);
+}
+
+#piston_live_man21{
+  margin-bottom: -10px !important;
+}
+
+#piston_live_downarrow{
+    height: 55px !important;
+    margin-top: 51px !important;
+    margin-left: -30px !important;
+}
+#piston_live_uparrow{
+  height: 105px ;
+}
+
+#piston_live_downarrow-img{
+    height: 55px;
+    width: 25px;
+}
+
+#piston_live_uparrow-img{
+    height: 99px;
+    width: 30px;
+}
+}

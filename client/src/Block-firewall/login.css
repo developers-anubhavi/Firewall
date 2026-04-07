@@ -1,0 +1,96 @@
+.login-container {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.login-box {
+width: 380px;
+padding: 30px;
+border-radius: 12px;
+background: white;
+box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.logo-container {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.login-logo {
+width: 120px;
+}
+
+.input-group {
+margin-bottom: 20px;
+}
+
+.input-group label {
+font-size: 14px;
+font-weight: bold;
+}
+
+.input-group input {
+width: 100%;
+padding: 10px;
+margin-top: 6px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
+
+.password-wrapper {
+display: flex;
+align-items: center;
+}
+
+.eye-icon {
+cursor: pointer;
+margin-left: -30px;
+}
+
+.login-btn {
+width: 100%;
+padding: 12px;
+border: none;
+background: #0078ff;
+color: white;
+font-size: 15px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.login-btn:hover {
+background: #005fcc;
+}
+.error-input {
+  border: 2px solid red !important;
+  background-color: #ffecec;
+}
+
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff3b30;
+  color: white;
+  padding: 14px 22px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  display: none;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  z-index: 9999;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

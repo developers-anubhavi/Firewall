@@ -1,0 +1,529 @@
+.block_cal-box {
+  width: 260px;
+  border: 1px solid #00000049;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  margin-left: 81%;
+  margin-top: -17.5%;
+  height: 220px;
+  background-color: rgba(173, 216, 230, 0.418);
+  border-radius: 10%;
+}
+
+.block_cal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+  background-color: rgb(63, 157, 219);
+  margin-top: 0px;
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+ 
+}
+
+.block_month {
+  margin-left: 10px;
+}
+.block_month-dropdown:hover{
+    background-color: #004175;
+}
+
+.block_year-dropdown:hover{
+    background-color: #004175;
+}
+
+.block_year {
+  margin-right: 10px;
+}
+
+
+.block_backwardarrow{
+ cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px
+}
+
+.block_forwardarrow{
+   cursor: pointer;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.block_cal-week,
+.block_cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 15px;
+ 
+}
+
+.block_cal-grid{
+  font-size: 13px;
+  color: rgb(0, 99, 248);
+  margin-top: 10px;
+}
+
+.block_cal-weekday {
+  font-weight: bold;
+  padding: 3px 0;
+  margin-top: -5px;
+}
+
+.block_cal-cell {
+  padding: 4px 0;
+}
+
+.block_cal-cell:hover{
+
+  cursor: pointer;
+}
+
+.block_month-dropdown, .block_year-dropdown {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-size: 17px
+}
+
+/* .block_month-dropdown:focus, .block_year-dropdown:focus {
+  outline: 2px solid blue;
+} */
+
+
+.block_shifts{
+  display: flex;
+  flex-direction: column;
+}
+
+.block_shift1,.block_shift2,.block_shift3{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 25px;
+  background-color:rgb(63, 157, 219);
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+  margin-left: 97%;
+  width: 2.8%;
+  height: 40px;
+  margin-top: -17%;
+  align-items: center;
+  justify-content: center;
+}
+
+.block_shift2{
+  margin-top: 0%;
+}
+
+.block_shift3{
+  margin-top: 0%;
+}
+
+.block_shift1:hover,.block_shift2:hover,.block_shift3:hover{
+  cursor: pointer;
+  background-color: rgb(24, 119, 170);
+}
+
+.block_clear-data{
+   display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 30px;
+  background-color: rgb(219, 149, 57);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 80%;
+  width: 19%;
+  margin-top: -65px;
+  justify-content: center;
+}
+
+.block_clear-data:hover{
+  cursor: pointer;
+  background-color: rgb(197, 112, 0);
+}
+
+.block_shift-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+
+.block_cal-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: bold;
+}
+
+
+.block_cal-cell.block_selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.block_cal-cell.block_selected:hover {
+  background-color: #004175;
+  color: #fff; 
+  cursor: pointer;
+}
+
+.block_cal-cell.block_inactive {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+
+
+.block_selected-date {
+  background-color:#00aaff;
+  color: white;
+}
+
+
+.block_selected-type {
+  background-color: #00aaff;
+  color: white;
+  border: 1px solid #0077cc;
+}
+
+.block_custom-dropdown {
+  position: relative;
+  width: 90px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.block_custom-dropdown .block_selected {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.block_custom-dropdown .block_dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.block_custom-dropdown .block_dropdown-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+}
+
+.block_custom-dropdown .block_dropdown-list li.block_active {
+  background-color: #004175;
+  color: white;
+  font-weight: bold;
+}
+
+.block_custom-dropdown .block_dropdown-list li:hover {
+  background-color: #dcefff;
+}
+
+@media(max-width:1600px) and (min-width:1001px){
+  .block_cal-box {
+  width: 200px;
+  border: 1px solid #00000049;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  margin-left: 81% !important;
+  margin-top: -17%;
+  height: 180px;
+  background-color: rgba(173, 216, 230, 0.418);
+  border-radius: 10%;
+}
+
+.block_cal-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 14px;
+  font-size: 22px !important;
+  background-color: rgb(63, 157, 219);
+  margin-top: -1px;
+  color: white;
+  padding: 4px;
+  border-radius: 10px;
+ 
+}
+
+.block_month {
+  margin-left: 10px;
+  font-size: 18px !important;
+}
+.block_month-dropdown:hover{
+    background-color: #004175;
+}
+
+.block_year-dropdown:hover{
+    background-color: #004175;
+}
+
+.block_year {
+  margin-right: 10px;
+    font-size: 18px !important;
+}
+
+
+.block_backwardarrow{
+ cursor: pointer;
+  font-weight: bold;
+  margin-left: 15px
+}
+
+.block_forwardarrow{
+   cursor: pointer;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.block_cal-week,
+.block_cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  font-size: 13px !important; 
+}
+
+.block_cal-grid{
+  font-size: 10.7px !important;
+  color: rgb(0, 99, 248);
+  margin-top: 0px;
+}
+
+.block_cal-weekday {
+  font-weight: bold;
+  padding: 3px 0;
+  margin-top: -11px;
+  font-size: 12px !important;
+}
+
+.block_cal-cell {
+  padding: 4px 0;
+}
+
+.block_cal-cell:hover{
+
+  cursor: pointer;
+}
+
+.block_month-dropdown, .block_year-dropdown {
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 2px 6px;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-size: 10px !important
+}
+
+/* .block_month-dropdown:focus, .block_year-dropdown:focus {
+  outline: 2px solid blue;
+} */
+
+
+.block_shifts{
+  display: flex;
+  flex-direction: column;
+
+  margin-left: 5px !important;
+}
+
+.block_shift1,.block_shift2,.block_shift3{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 21px !important;
+  background-color:rgb(63, 157, 219);
+  color: white;
+  padding: 2px;
+  border-radius: 10px;
+  margin-left: 96%;
+  width: 3%;
+  height: 40px !important;
+  margin-top: -17%;
+  align-items: center;
+  justify-content: center;
+}
+
+.block_shift2{
+  margin-top: 0%;
+}
+
+.block_shift3{
+  margin-top: 0%;
+}
+
+.block_shift1:hover,.block_shift2:hover,.block_shift3:hover{
+  cursor: pointer;
+  background-color: rgb(24, 119, 170);
+}
+.block_clear-data{
+   display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 24px !important;
+  background-color: rgb(219, 149, 57);
+  color: white;
+  padding: 4px;
+  border-radius: 10px;
+  margin-left: 80%;
+  width: 19%;
+  margin-top: -45px;
+  justify-content: center;
+}
+.block_clear-data:hover{
+  cursor: pointer;
+  background-color: rgb(197, 112, 0);
+}
+
+
+
+.block_shift-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 0 4px;
+  border-radius: 50%;
+}
+
+.block_cal-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1px;
+  border-radius: 4px;
+  cursor: default;
+  font-weight: bold;
+}
+
+
+.block_cal-cell.block_selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.block_cal-cell.block_selected:hover {
+  background-color: #004175;
+  color: #fff;
+  cursor: pointer;
+}
+
+.block_cal-cell.block_inactive {
+  background-color: #e0e0e0;
+  color: #888;
+}
+
+
+
+.block_selected-date {
+  background-color:#00aaff;
+  color: white;
+}
+
+
+.block_selected-type {
+  background-color: #00aaff;
+  color: white;
+  border: 1px solid #0077cc;
+}
+
+.block_custom-dropdown {
+  position: relative;
+  width: 90px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.block_custom-dropdown .block_selected {
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  background-color: rgb(63, 157, 219);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.block_custom-dropdown .block_dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 140px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.block_custom-dropdown .block_dropdown-list li {
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: normal;
+  color: #333;
+}
+
+.block_custom-dropdown .block_dropdown-list li.block_active {
+  background-color: #004175;
+  color: white;
+  font-weight: bold;
+}
+
+.block_custom-dropdown .block_dropdown-list li:hover {
+  background-color: #dcefff;
+}
+}

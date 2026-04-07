@@ -1,0 +1,943 @@
+/* .settings_overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+  z-index: 1000;
+} */
+
+/* .settings_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  min-height: 85vh;
+  overflow-y: auto;
+  width: 90%;
+  position: relative;
+  margin-top: 40px;
+} */
+
+
+body{
+    background-color: white;
+}
+.settings {
+    display: flex;  
+     flex-direction: row;
+    align-items: center;  
+}
+
+
+
+#settings_hf{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#settings_tiei{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 38%;
+}
+
+.settings_headtable1{
+    width: 23%;
+    margin-left: 100px;
+    margin-top: 20px;
+    min-height: 500px;
+    /* border-spacing: 3px 3px; */
+    text-align: center;
+     border-collapse: separate;   
+    border-spacing: 0;        
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+.settings_headtable1 td{
+    border: 1px solid rgba(148, 144, 144, 0.438);
+}
+
+
+#piston_col1{
+    width: 120px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+#piston_col2{
+   width: 50px;
+   background-color: #7288a065;
+   font-weight: bold;
+}
+
+#piston_col3{
+    width: 50px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+#piston_col4{
+    width: 50px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+/* 
+#settings_cell2_1{
+    padding: 10px;
+    width: 60px;
+}
+
+#settings_cell3_1{
+    width: 60px;
+}
+
+#settings_cell4_1{
+    width: 60px;
+} */
+
+#settings_set{
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 11%;
+    margin-top: 15px;
+    background-color: #007bff;  color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.piston_shifttimings table td{
+    border-collapse: collapse;
+    border: 1px solid rgba(187, 184, 184, 0.507);
+    border-radius: 10%; 
+    
+}
+
+.piston_shifttimings table{
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+
+
+.piston_shifttimings{
+    width: 24%;
+    margin-left: 63%;
+    margin-top: -25.8% !important;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+     border-radius: 10px; 
+     padding: 10px;
+     background-color: white;
+}
+
+#shifttext{
+    margin-left: 19px;
+    
+
+}
+
+#shift_1st,#shift_2nd,#shift_3rd{
+    text-align: center;
+  
+}
+#shift1,#shift2,#shift3{
+    padding: 10px;
+}
+
+
+#settings_update{
+  margin-left: 150px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.tp-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+ 
+}
+
+.tp-input {
+  width: 140px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+  background-color: #93acb3a1;
+
+}
+
+.tp-btn {
+  margin-right: -100px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #ffffff;
+  padding: 0 6px;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+}
+.tp-popup {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: flex;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 120px;  /* show ~3 rows */
+}
+
+.tp-popup .tp-col {
+  /* optionally fix width so columns align nicely */
+  width: 50px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd; /* subtle border for each column */
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.tp-col {
+  flex: 1;
+  max-height: 120px;  /* show ~3 rows */
+  overflow-y: scroll;  /* scrollable individually */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.tp-col::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.tp-popup .tp-col div {
+  padding: 8px 12px;  /* vertical and horizontal padding for more space */
+  margin: 2px 0;      /* small margin between items */
+  cursor: pointer;
+  user-select: none;
+}
+
+.tp-popup .tp-col div.selected {
+  background-color: #007bff; /* or whatever highlight color */
+  color: white;
+  border-radius: 4px;
+}
+
+.tp-col div {
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tp-col div.selected {
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.tp-col div:hover {
+  background: #ebebeb;
+}
+
+
+
+/* ---------------- EXCEL SECTION STYLE ---------------- */
+/* ------------------ EXCEL REPORT STYLES ------------------ */
+
+.excel-container {
+  background: white;
+  padding: 30px 40px;         
+  border-radius: 12px;
+  width: 420px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+  margin-top: -29.5%;          
+  margin-left: 32%;           
+  text-align: center;        
+}
+
+/* Title */
+.excel-title {
+  font-size: 22px;          
+  margin-bottom: 25px;        
+  color: #007bff;           
+  font-weight: 600;
+}
+
+/* Form Groups */
+.excel-form-group {
+  margin-bottom: 18px;      
+  text-align: left;
+}
+
+.excel-form-group label, .piston-engine-search label {
+  font-weight: 500;           
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.excel-form-group input, .piston-engine-search input {
+  width: 100%;
+  padding: 10px;             
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.piston-engine-search{
+  margin-left: 140px;
+  margin-top: -100px;
+}
+
+.pistonmodel_excel-section {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+/* Sections (MODEL / STATION) */
+.excel-section {
+  margin-top: 50px;
+  text-align: left;
+}
+
+.excel-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Checkbox Groups */
+.excel-checkbox-vertical label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #444;
+}
+
+.excel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 10px;
+}
+
+.excel-grid label {
+  font-size: 14px;
+  color: #444;
+}
+
+.excel-grid input,
+.excel-checkbox-vertical input {
+  margin-right: 6px;
+}
+
+/* Download Button */
+.excel-download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 7px;
+}
+
+.excel-download-btn:hover {
+  background-color: #0056b3;
+}
+
+.excel-download-btn:disabled {
+  background-color: #7ca9e8;
+  cursor: not-allowed;
+}
+
+.settings-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  width: 100%;
+  height: 75px;
+  background: #0078D4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-logo {
+  height: 35px;
+}
+
+.topbar-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.user-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.logout-btn {
+  background: white;
+  color: #0078D4;
+  font-weight: 600;
+
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #eaf4ff;
+}
+
+.settings-content {
+  margin-top: 50px;
+  padding: 10px;
+  max-width: 400px;
+  margin-left: 0px;
+  margin-right: auto;
+
+}
+
+.settings-section {
+  margin-top: 25px;
+}
+
+.settings-btn {
+  margin-right: 10px;
+  padding: 8px 15px;
+  background: #0078D4;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.settings-btn:hover {
+  background: #005fa3;
+}
+
+
+@media(max-width:1600px) and (min-width:1001px){
+
+/* .settings_modal {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  min-height: 85vh;
+  overflow-y: auto;
+  width: 90%;
+  position: relative;
+  margin-top: 40px;
+} */
+
+.settings {
+    display: flex;  
+     flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+#settings_hf{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#settings_tiei{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 38%;
+}
+
+.settings_headtable1{
+    width: 23%;
+    margin-left: 100px;
+    margin-top: 0px;
+    min-height: 450px;
+    /* border-spacing: 3px 3px; */
+    text-align: center;
+     border-collapse: separate;  
+    border-spacing: 0;       
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+
+    overflow: hidden;
+   
+}
+
+
+.settings_headtable1 td{
+    border: 1px solid rgba(148, 144, 144, 0.438);
+     font-size: 13px !important
+}
+
+
+#piston_col1{
+    width: 120px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+#piston_col2{
+   width: 50px;
+   background-color: #7288a065;
+   font-weight: bold;
+}
+
+#piston_col3{
+    width: 50px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+#piston_col4{
+    width: 50px;
+    background-color: #7288a065;
+    font-weight: bold;
+}
+
+/* 
+#settings_cell2_1{
+    padding: 10px;
+    width: 60px;
+}
+
+#settings_cell3_1{
+    width: 60px;
+}
+
+#settings_cell4_1{
+    width: 60px;
+} */
+
+#settings_set{
+    padding: 10px;
+    width: 150px;
+    font-size: 18px;
+    margin-left: 13%;
+    margin-top: 15px;
+    background-color: #007bff;  color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.piston_shifttimings table td{
+    border-collapse: collapse;
+    border: 1px solid rgba(187, 184, 184, 0.507);
+    border-radius: 10%; 
+    
+}
+
+.piston_shifttimings table{
+    border-collapse: collapse; 
+    margin-top: 10px;
+}
+
+
+
+.piston_shifttimings{
+    width: 24%;
+    margin-left: 65%;
+    margin-top: -35% !important;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+     border-radius: 10px; 
+     padding: 10px;
+}
+
+#shifttext{
+    margin-left: 19px;
+    
+
+}
+
+#shift_1st,#shift_2nd,#shift_3rd{
+    text-align: center;
+    font-size: 13px;
+  
+}
+#shift1,#shift2,#shift3{
+    padding: 10px;
+    font-size: 12px !important;
+}
+
+
+#settings_update{
+  margin-left: 150px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+
+.tp-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+ 
+}
+
+.tp-input {
+  width: 140px;
+  font-size: 16px;
+  border: none;
+  text-align: center;
+  padding: 6px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: monospace;
+  background-color: #93acb3a1;
+
+}
+
+.tp-btn {
+  margin-right: -100px;
+  cursor: pointer;
+  background: white;
+  border: 1px solid #ffffff;
+  padding: 0 6px;
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+
+}
+.tp-popup {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  display: flex;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 1000;
+  max-height: 120px; 
+}
+
+.tp-popup .tp-col {
+  width: 50px;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.tp-col {
+  flex: 1;
+  max-height: 120px; 
+  overflow-y: scroll; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.tp-col::-webkit-scrollbar {
+  display: none; 
+}
+
+.tp-popup .tp-col div {
+  padding: 8px 12px;  
+  margin: 2px 0;  
+  cursor: pointer;
+  user-select: none;
+}
+
+.tp-popup .tp-col div.selected {
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.tp-col div {
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tp-col div.selected {
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+
+.tp-col div:hover {
+  background: #ebebeb;
+}
+
+
+
+.excel-container {
+  background: white;
+  padding: 10px 25px;         
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); 
+  margin-top: -33.3%;          
+  margin-left: 32%;           
+  text-align: center;        
+}
+
+.excel-title {
+  font-size: 22px;          
+  margin-bottom: 25px;        
+  color: #007bff;           
+  font-weight: 600;
+}
+
+.excel-form-group {
+  margin-bottom: 18px;      
+  text-align: left;
+}
+
+.excel-form-group label {
+  font-weight: 500;           
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.excel-form-group input {
+  width: 100%;
+  padding: 10px;             
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.excel-section {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.pistonmodel_excel-section {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.excel-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.excel-checkbox-vertical label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #444;
+}
+
+.excel-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 10px;
+  font-size: 12px !important;
+}
+
+.excel-grid label {
+  font-size: 13px;
+  color: #444;
+}
+
+.excel-grid input,
+.excel-checkbox-vertical input {
+  margin-right: 6px;
+}
+
+.excel-download-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+  margin-top: 7px;
+}
+
+.excel-download-btn:hover {
+  background-color: #0056b3;
+}
+
+.excel-download-btn:disabled {
+  background-color: #7ca9e8;
+  cursor: not-allowed;
+}
+
+.settings-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  width: 100%;
+  height: 75px;
+  background: #0078D4;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topbar-logo {
+  height: 35px;
+  margin-left: -1%;
+}
+
+.topbar-title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 500px !important;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 50px;
+}
+
+.user-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.logout-btn {
+  background: white;
+  color: #0078D4;
+  font-weight: 600;
+
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.logout-btn:hover {
+  background: #eaf4ff;
+}
+
+
+.settings-content {
+  margin-top: 50px;
+  padding: 10px;
+  max-width: 400px;
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.settings-section {
+  margin-top: 25px;
+}
+
+.settings-btn {
+  margin-right: 10px;
+  padding: 8px 15px;
+  background: #0078D4;
+  color: white;
+
+  border: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.settings-btn:hover {
+  background: #005fa3;
+}
+
+}
